@@ -1,0 +1,6 @@
+﻿media id on landing page template
+cannonical at landing page template
+google maps on landing map cshtml
+
+dlls
+footerscript

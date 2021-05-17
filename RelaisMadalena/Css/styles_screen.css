@@ -1,0 +1,1077 @@
+BODY, HTML { height: 100%; }
+BODY.default { background: url(/RelaisMaddalena/img/bg02.gif) repeat-x; }
+
+UL { padding: 0; margin: 0; list-style: none; }
+ul.groups {
+	padding: 0 5px 5px;
+}
+
+#box01 { background: url(/RelaisMaddalena/img/bg01.jpg) 50% 100% repeat-x; min-height: 100%; }
+* HTML #box01 { height: 100%; }
+#box02 { padding-bottom: 130px; width: 980px; background: url(/RelaisMaddalena/img/bg03.jpg) no-repeat; }
+#box03 { margin-top: 0px;
+padding-left: 10px;/*padding: 20px 0 0 20px;*/ }
+#box04 { padding: 20px; }
+#box05 { padding: 20px 0 0 20px; background: url(/RelaisMaddalena/img/bg28.jpg) no-repeat; margin: 1px 0 0 0; }
+
+#header {
+		height: 337px;
+		margin-bottom: 0px;
+}
+
+#ctl00_plcCol1_ctl00_ctl00_lblSelect {
+	margin-left: 5px;
+}
+
+
+.tabs-content span.btn {
+	height: inherit;
+}
+
+.col { float: left; min-height: 1px; }
+DIV.col01 { float: right; width: 770px; }
+DIV.col02 { width: 210px; background: #e6dab5 url(/RelaisMaddalena/img/bg04.gif) 0 100% repeat-x; padding-bottom: 50px; line-height: 16px; }
+DIV.col02a { border-right: 1px solid #fff; min-height: 300px; }
+DIV.col02 P.text { padding: 4px 10px 6px 10px; margin: 0; background: #e7e1cf url(/RelaisMaddalena/img/bg05.gif) repeat-x; color: #866e1b; border-bottom: 1px solid #fff; line-height: 14px; }
+DIV.col02 DIV.heading { height: 28px; overflow: hidden; margin: -1px 0 0 0; text-overflow: ellipsis; color: #fff; font-weight: bold; width: 100%; }
+DIV.col02 DIV.heading H2 { padding: 7px 10px 15px 10px; margin: 0; font-size: 11px; color: #fff; background: #fff url(/RelaisMaddalena/img/bg06.gif) 0 1px no-repeat; white-space: nowrap; }
+DIV.col02 DIV.heading H2.login { background-position: 0 -29px; }
+DIV.col02 DIV.heading A.logout { float: right; width: 22px; height: 18px; background: url(/RelaisMaddalena/img/ico_logout.gif) no-repeat; line-height: 120px; font-size: 1px; margin: -31px 0 0 0; overflow: hidden; }
+DIV.col03 { width: 160px; text-align: center; padding: 30px 0 20px 0; }
+DIV.col03 H1 { width: 120px; height: 105px; background: url(/RelaisMaddalena/img/logo_ddbc02.gif) no-repeat; margin: 0 auto !important; line-height: 300px !important; font-size: 1px; overflow: hidden; display: block; }
+DIV.col04 { line-height: 18px; width: 430px; padding: 15px 0; margin: 0 20px 0 0; }
+DIV.col04 P { margin: 0; padding: 10px 0 0 0; }
+DIV.col04 A { text-decoration: underline; }
+DIV.col04 B { color: #104b7c; }
+DIV.col05 { width: 160px; padding: 0 0 10px 0; }
+DIV.col05 P { margin: 0; }
+
+DIV.col06 { width: 220px; min-height: 1px; margin: 0 10px 0 0; }
+DIV.col06 H2 { background:#513E46; -moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px; padding: 5px 10px 5px 10px; color: #8D7D84; margin: 10px 0 0 0; font-size: 12px; }
+DIV.col07 { width: 260px; min-height: 1px; margin: 0 10px 0 0; }
+DIV.col07 H2 { background:#513E46; -moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px; padding: 5px 10px 5px 10px; color: #8D7D84; margin: 10px 0 0 0; font-size: 12px; }
+DIV.col07 UL.listing1 { padding: 0; }
+DIV.col07 UL.listing1 DIV.txt { width: 195px; line-height: 16px; }
+DIV.col08 { float: left; width: 239px; min-height: 1px; }
+DIV.col08 H2 { background:#513E46; -moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px; padding: 5px 10px 5px 10px; color: #8D7D84; margin: 10px 0 0 0; font-size: 12px; }
+
+DIV.col09 { width: 365px; margin-right: 20px; }
+DIV.col10 { width: 365px; }
+
+DIV.menu1 { background: #6a83b3 url(/RelaisMaddalena/img/bg07.gif) 100% 0 repeat-y; height: 27px; }
+DIV.menu1 UL { position: absolute; z-index: 2; width: 770px; height: 26px; overflow: hidden; }
+DIV.menu1 UL * { float: left; }
+DIV.menu1 LI { max-height: 26px; overflow: hidden; }
+DIV.menu1 A { border-right: 1px solid #a7badb; padding: 6px 10px; color: #fff; min-height: 26px; }
+DIV.menu1 A:hover { background-color: #004687 !important; text-decoration: none; }
+DIV.menu1 A.active { background-color: #004687 !important; color: #e6dab5; }
+DIV.menu1 LI.home A { background: url(/RelaisMaddalena/img/ico_home.gif) 9px 8px no-repeat; padding-left: 25px; }
+
+DIV.menu2 { background: #6a83b3 url(/RelaisMaddalena/img/bg14.gif) 100% 0 repeat-y; height: 27px; cursor: default; }
+DIV.menu2 UL { width: 770px; height: 26px; overflow: hidden; }
+DIV.menu2 UL * { float: left; }
+DIV.menu2 LI { max-height: 26px; overflow: hidden; padding: 0 1px 0 0; background: url(/RelaisMaddalena/img/bg15.gif) 100% 15px no-repeat; }
+DIV.menu2 A { padding: 6px 10px; color: #004687; min-height: 26px; }
+DIV.menu2 A:hover { background-color: #004687 !important; color: #fff; text-decoration: none; }
+DIV.menu2 A.active { background-color: #004687 !important; color: #e6dab5; }
+
+DIV.menu2a { background: #6a83b3 url(/RelaisMaddalena/img/bg14a.gif) 100% 0 repeat-y; height: 27px; cursor: default; }
+DIV.menu2a UL { width: 770px; height: 26px; overflow: hidden; }
+DIV.menu2a UL * { float: left; }
+DIV.menu2a LI { max-height: 26px; overflow: hidden; padding: 0 1px 0 0; background: url(/RelaisMaddalena/img/bg15.gif) 100% 15px no-repeat; }
+DIV.menu2a A { padding: 6px 10px; color: #004687; min-height: 26px; }
+DIV.menu2a A:hover { background-color: #004687 !important; color: #fff; text-decoration: none; }
+DIV.menu2a A.active { background-color: #004687 !important; color: #e6dab5; }
+
+UL.menu3 { background:none repeat scroll 0 0 #513E46; height: 28px; padding: 0; margin:0 0 10px; -moz-border-radius:7px; -webkit-border-radius:7px; border-radius:7px;}
+UL.menu3 * { float: left; }
+UL.menu3 LI { overflow: hidden; }
+UL.menu3 A { border-right: 1px solid #6B535D; padding: 5px 10px; color: #fff;}
+UL.menu3 A:hover { background-color: #6B535D !important; text-decoration: none; }
+UL.menu3 A.active { background-color: #6B535D !important; color: #e6dab5; text-decoration: none; }
+
+UL.menu4 { line-height: normal !important; margin:0 0 0px; /*background:#d1d1d1;*/ -moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px;
+	padding-right: 20px;
+	padding-left: 5px;
+	padding-bottom: 20px;
+}
+
+input#username.default, input#password.default {
+	width: 75px !important;
+}
+UL.menu4 LI { float: left; width: 100%; }
+UL.menu4 LI A { display: block; padding: 0 10px 5px 22px; background: url(../img/img-02.gif) no-repeat 8px center; color: #ac9ca3;}
+UL.menu4 LI A SPAN { color: #d41328; }
+UL.menu4 LI A:hover { text-decoration:none !important; color:#fff !important; }
+UL.menu4 LI A.active { text-decoration: none; background-color: #d6c27e; }
+
+P.menu5 { padding: 0 0 10px 0; margin:10px 0 -15px 5px; }
+P.menu5 * { float: left; margin: 0 1px 0 0; }
+P.menu5 A { background: #3f2c33; color: #D6CCBF; font-weight: bold; text-decoration: none; padding:5px; -moz-border-radius:7px 7px 0 0; -webkit-border-radius:7px 7px 0 0; border-radius:7px 7px 0 0; }
+P.menu5 A:hover { background: #644d56;}
+P.menu5 A.active { background: #513e46; color:white; }
+P.menu5 SPAN { display:none; }
+
+UL.menu6 { height: 26px; overflow: hidden; padding: 0; margin: 1px 0 0 0; background: url(/RelaisMaddalena/img/bg29.gif) no-repeat; }
+UL.menu6 * { float: left; }
+UL.menu6 LI { max-height: 26px; overflow: hidden; padding: 0 1px 0 0; background: url(/RelaisMaddalena/img/bg30.gif) 100% 15px no-repeat; }
+UL.menu6 A { padding: 6px 10px; color: #004687; min-height: 26px; }
+UL.menu6 A:hover { background-color: #004687 !important; color: #fff; text-decoration: none; }
+UL.menu6 A.active { background-color: #004687 !important; color: #e6dab5; }
+
+/* Left column items */
+
+DIV.col02 .price { color: #af0000; }
+P.h3edit { float: right; margin: -19px 0 0 0; }
+P.h3edit A { text-decoration: underline; }
+
+a#ctl00_ctl00_lnkStep1, a#ctl00_ctl00_lnkStep2, a#ctl00_ctl00_lnkStep3, a#ctl00_ctl00_lnkStep4, a#ctl00_ctl01_LogOut {
+	color: white;
+	font-weight: bold;
+}
+
+.logout {
+	float: left;
+	margin-left: 131px;
+	font-weight: bold;
+	text-decoration: underline;
+
+}
+
+DIV.block01 { padding: 0 15px 8px; }
+DIV.block01 P.tools { background: url(/RelaisMaddalena/img/bg13.gif) repeat-x; margin: 8px 0 0 0; color: #e6dab5; padding: 7px 0 0 0; }
+DIV.block01 P.tools A { color: #8d7d84;
+	font-size: 10px;
+	text-decoration: none;}
+DIV.block01 P.tools SPAN { margin: 0 3px; }
+DIV.block01 H3 { font-size: 11px; border-bottom: 1px dotted #8D7D84; padding: 0 0 3px 0; margin: 8px 0 0 0; }
+DIV.block01 P.msg-error { font-weight: normal; border-width: 1px; }
+
+TABLE.smallform { margin: 8px 0 0 0; width: 100%; }
+TABLE.smallform TH { color: #8D7D84; line-height: normal; width: 50%; font-weight: normal;
+	padding: 5px 0;
+}
+TABLE.smallform TH IMG { vertical-align: top; margin: 0 0 -2px 0; }
+TABLE.smallform TD { color: #866e1b; line-height: normal; width: 50%; padding: 1px 0; }
+TABLE.smallform TD INPUT,
+TABLE.smallform TD SELECT,
+TABLE.smallform TD IMG { float: left; margin: 0 2px 0 0; padding: 0;}
+TABLE.smallform TD INPUT {
+	width: 54px !important; height: 15px;
+}
+TABLE.smallform INPUT.default { width: 100px; }
+
+TABLE.smalldetails { width: 100%; margin: 10px 0 0 0; }
+TABLE.smalldetails TH { font-weight: normal; padding: 2px 5px 0 0; }
+TABLE.smalldetails TD { padding: 2px 0 0 0; }
+TABLE.smalldetails TR.total TH { /*border-top: 1px dotted #b9b093;*/ padding-bottom: 2px; font-weight: bold; }
+TABLE.smalldetails TR.total TD { /*border-top: 1px dotted #b9b093;*/ padding-bottom: 2px; font-weight: bold; }
+
+#col1 p.text {
+	display: none;
+}
+P.leftactions { margin: 8px 0 0 0; }
+P.leftactions * { float: left; }
+P.leftactions .f-right { margin: 0 0 0 5px !important; }
+P.leftactions SPAN.btn {}
+P.leftactions SPAN.btn SPAN {  }
+P.leftactions SPAN.btn INPUT,
+P.leftactions SPAN.btn BUTTON {
+	-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+cursor: pointer;
+text-transform: uppercase;
+	color:#d9d9d9;
+	text-decoration:none;
+	font: bold 11px Arial;
+	background: #6b4d59; /* Old browsers */
+background: -moz-linear-gradient(top,  #6b4d59 0%, #2b2025 100%, #2b2025 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6b4d59), color-stop(100%,#2b2025), color-stop(100%,#2b2025)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #6b4d59 0%,#2b2025 100%,#2b2025 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #6b4d59 0%,#2b2025 100%,#2b2025 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #6b4d59 0%,#2b2025 100%,#2b2025 100%); /* IE10+ */
+background: linear-gradient(top,  #6b4d59 0%,#2b2025 100%,#2b2025 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4d59', endColorstr='#2b2025',GradientType=0 );
+	border: 1px solid #785d68;
+}
+
+
+P.leftactions A.btn { margin: 0 5px 0 0; background: url(/RelaisMaddalena/img/bg12.gif) 100% 0 no-repeat; padding: 0 5px 0 0; color: #866e1b; }
+P.leftactions A.btn SPAN { background: url(/RelaisMaddalena/img/bg12.gif) no-repeat; font-weight: bold; cursor: pointer; padding: 4px 10px 4px 15px; }
+P.leftactions A.btn:hover { text-decoration: none; }
+P.leftactions A.exit { background: url(/RelaisMaddalena/img/bg12.gif) no-repeat; padding: 0; }
+P.leftactions A.exit SPAN { background: url(/RelaisMaddalena/img/bg12.gif) 100% -90px no-repeat; padding-right: 27px; }
+P.leftactions INPUT.promocode { width: 80px; float: left; padding: 1px 4px; margin: 2px 0 0 0; }
+
+#book { margin: 10px 0 0 0; }
+#book A { border: 1px solid #fff; padding: 2px 10px; background: #e7e1cf url(/RelaisMaddalena/img/bg26.gif) 100% 50% no-repeat; display: block; color: #866e1b; }
+#book A:hover { text-decoration: none; background-color: #eff5fb; }
+#book-drop { position: fixed; width: 189px; left: 0; top: 0; background: #fff; }
+#book-drop UL { padding: 0; margin: 0; }
+#book-drop UL LI { float: left; width: 100%; }
+#book-drop UL LI A { display: block; background: #e7e1cf; padding: 2px 10px; color: #866e1b; border: solid #fff; border-width: 0 1px 1px 1px; }
+#book-drop UL LI A:hover { background-color: #004687; color: #fff; text-decoration: none; }
+
+/* Tooltip */
+
+#tooltip { position: absolute; left: -100px; top: -100px; background: url(/RelaisMaddalena/img/bg11.gif) -196px 100% no-repeat; width: 196px; margin: -2px 0 0 -2px; cursor: default;  z-index: 1000000 !important; }
+#tooltip-inner { background: url(/RelaisMaddalena/img/bg11.gif) 0 0 no-repeat; padding: 8px 10px 8px 27px; color: #343434; line-height: 14px;}
+
+/* Front page */
+
+SPAN.front01 { height: 210px; background: url(/RelaisMaddalena/img/bg08.jpg) 100% 0 no-repeat; position: relative; display: block; }
+SPAN.front02 { width: 600px; height: 210px; background: url(/RelaisMaddalena/img/illustration02.jpg) no-repeat; float: left; }
+SPAN.front03 { width: 290px; height: 310px; background: url(/RelaisMaddalena/img/illustration01.png) no-repeat; right: 0; top: -40px; position: absolute; z-index: 1; }
+* HTML SPAN.front03 { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/illustration01.png', sizingMethod='crop'); background: none; }
+DIV.front04 { background: #fff url(/RelaisMaddalena/img/bg09.jpg) no-repeat; margin: 1px 0 0 0; }
+DIV.front05 { padding-left: 20px; }
+
+DIV.specialoffers01 { background: url(/RelaisMaddalena/img/bg10.gif) repeat-x; overflow: hidden; width: 750px; line-height: 16px; }
+DIV.specialoffers01 UL { background: url(/RelaisMaddalena/img/bg10.gif) 0 100% repeat-x; width: 770px; padding: 10px 0; }
+DIV.specialoffers01 UL LI { float: left; width: 370px; margin: 0 10px 0 0; }
+DIV.specialoffers01 H2 { margin: 0; font-size: 11px; padding: 3px 0 0 0; }
+DIV.specialoffers01 H2 A { color: #104b7c; }
+DIV.specialoffers01 DIV.img { width: 75px; height: 75px; overflow: hidden; margin: 0 10px 0 0; }
+DIV.specialoffers01 DIV.img A { border: 1px solid #efe1b7; padding: 4px; background: #fff; float: left; }
+DIV.specialoffers01 DIV.img A:hover { border-color: #cfb65c; }
+DIV.specialoffers01 DIV.img IMG { width: 65px; height: 65px; }
+DIV.specialoffers01 DIV.txt { width: 285px; }
+DIV.specialoffers01 DIV.txt P { margin: 5px 0 0 0; }
+DIV.specialoffers01 DIV.txt A { text-decoration: underline; }
+
+/* Subpage */
+
+P.themeimg { border: 1px solid #cdd8eb; padding: 4px; background: #fff;  display:none;}
+P.themeimg IMG { width: 740px; height: 170px; }
+
+DIV.zonemap { border: 1px solid #cdd8eb; padding: 4px; background: #fff; margin: 10px 0 0 0; }
+
+DIV.contentcol01 { width: 510px; margin: 10px 20px 0 0; }
+DIV.contentcol02 { width: 220px; margin: 10px 0 0 0; overflow: hidden; }
+DIV.contentcol03 { width: 410px; margin-right: 20px; }
+DIV.contentcol03 UL.listing1 DIV.txt { width: 325px; }
+DIV.contentcol04 { width: 320px; }
+DIV.contentcol05 { width: 215px; margin: 10px 20px 0 0; }
+DIV.contentcol06 { width: 515px; }
+DIV.contentcol07 { width: 514px; margin: 0 20px 0 0; }
+DIV.contentcol08 { width: 216px; margin: 0 0 0 0; overflow: hidden; }
+DIV.contentcol08 UL.gallery01 { width: 226px; margin: 0; }
+DIV.contentcol08 UL.gallery01 LI { margin: 4px 4px 0 0; }
+DIV.contentcol08 P.bigimg { border: 1px solid #efe1b7; padding: 2px; background: #fff; display:none;}
+DIV.contentcol09 { width: 440px; margin: 10px 20px 0 0; overflow: hidden; }
+DIV.contentcol09 UL.gallery01 { width: 450px; }
+DIV.contentcol10 { width: 290px; margin: 10px 0 0 0; }
+DIV.contentcol11 { width: 365px; margin-right: 20px; }
+DIV.contentcol12 { width: 365px; }
+DIV.contentcol13 { width: 440px; margin: 0 20px 0 0; }
+DIV.contentcol14 { width: 290px; }
+DIV.contentcol15 { float: left; width: 510px; margin: 1em 15px 0 0; }
+DIV.contentcol16 { float: left; width: 220px; }
+
+TABLE.data2 { width: 100%; }
+TABLE.data2 TH { line-height: normal; border-bottom: 2px solid #e9e1c5; background: #f6f1e3 url(/RelaisMaddalena/img/bg16.gif) repeat-x; padding: 10px 10px 5px 10px; }
+TABLE.data2 TD { line-height: normal; padding: 3px 10px; border-bottom: 1px solid #e9e1c5; color: #4b4945; line-height: normal; }
+TABLE.data2 TD.size { text-align: right; color: #888; white-space: nowrap; font-weight: normal; }
+TABLE.data2 TR.total TH,
+TABLE.data2 TR.total TD { border-bottom: none; border-top: 2px solid #e9e1c5; background: url(/RelaisMaddalena/img/bg11.gif) repeat-x; padding: 5px 5px 10px 5px; }
+
+UL.listing1 { padding: 10px 0 0 0; margin: 0; }
+UL.listing1 LI { float: left; width: 100%; padding: 0; margin: 10px 0 0 0; background: none; clear: both; }
+UL.listing1 DIV.img { width: 75px; height: 75px; overflow: hidden; margin: 0 10px 0 0; }
+UL.listing1 DIV.img A { border: 1px solid #efe1b7; padding: 4px; background: #fff; float: left; }
+UL.listing1 DIV.img A:hover { border-color: #cfb65c; }
+UL.listing1 DIV.img DIV { border: 1px solid #efe1b7; padding: 4px; background: #fff; float: left; }
+UL.listing1 DIV.img IMG { width: 65px; height: 65px; }
+UL.listing1 DIV.txt { width: 425px; }
+UL.listing1 H2,
+UL.listing1 H3 { margin: 0; font-size: 12px; }
+UL.listing1 H2 A,
+UL.listing1 H3 A { color: #104b7c; }
+UL.listing1 P { margin: 5px 0 0 0; }
+
+UL.listing2 { padding: 10px 0 0 0; margin: 0; }
+UL.listing2 LI { float: left; width: 365px; padding: 0; margin: 10px 0 0 0; background: none; }
+UL.listing2 LI.collection { background: #fff url(/RelaisMaddalena/img/bg17.gif) repeat-x; padding: 10px 0; }
+UL.listing2 DIV.img { width: 75px; height: 75px; overflow: hidden; margin: 0 10px 0 0; }
+UL.listing2 DIV.img A { border: 1px solid #efe1b7; padding: 4px; background: #fff; float: left; }
+UL.listing2 DIV.img A:hover { border-color: #cfb65c; }
+UL.listing2 DIV.img DIV { border: 1px solid #efe1b7; padding: 4px; background: #fff; float: left; }
+UL.listing2 DIV.img IMG { width: 65px; height: 65px; }
+UL.listing2 DIV.txt { width: 280px; }
+UL.listing2 H2,
+UL.listing2 H3 { margin: 0; font-size: 12px; }
+UL.listing2 H2 A,
+UL.listing2 H3 A { color: #104b7c; }
+UL.listing2 P { margin: 5px 0 0 0; }
+UL.listing2 LI.even { clear: left; margin: 10px 10px 0 0; }
+UL.listing2 P.pricereduction { margin: 0; }
+UL.listing2 P.pricereduction SPAN { color: #af0000; font-weight: bold; }
+
+UL.listing3 { padding: 0; margin: 0; line-height: 16px; }
+UL.listing3 LI { width: 365px; float: left; clear: both; padding: 0; margin: 0; background: none; }
+UL.listing3 DIV.img { display: none; }
+UL.listing3 DIV.txt { width: 365px; }
+UL.listing3 P { margin: 0; padding: 5px 10px 0 10px; text-align: justify; }
+UL.listing3 H2,
+UL.listing3 H3 { margin: 10px 0 0 0; padding: 3px 10px; color: #fff; font-size: 11px; }
+UL.listing3 H2 A,
+UL.listing3 H3 A { color: #fff; }
+UL.listing3 H2.praia { background: #9cb12b; }
+UL.listing3 H2.pinheiros { background: #658ccd; }
+UL.listing3 H2.dunas { background: #e58f3c; }
+UL.listing3 H2.jardim { background: #d7bb1c; }
+UL.listing3 H2.lagoa { background: #4aaed3; }
+UL.listing3 H2.villas { background: #465c81; }
+UL.listing3 H2.vista { background: #e87e84; }
+
+DIV.contentblock01 { background: url(/RelaisMaddalena/img/bg17.gif) repeat-x; padding: 20px 0 0 20px; margin: 20px 0 0 0; }
+DIV.contentblock01 DIV.a { width: 720px; overflow: hidden; }
+DIV.contentblock01 H2 { margin: 0; font-size: 18px; font-weight: normal; }
+DIV.contentblock01 UL { padding: 0; margin: 1em 0 0 0; width: 770px; background: url(/RelaisMaddalena/img/bg18.gif) 230px 0 repeat-y; }
+DIV.contentblock01 UL LI { float: left; width: 210px; margin-right: 40px; }
+
+DIV.contentblock02 { background: url(/RelaisMaddalena/img/bg17.gif) repeat-x; padding: 20px 20px 0 20px; margin: 20px 0 0 0; }
+DIV.contentblock02 P.img { margin: 1em 1em 0 0; border: 1px solid #efe1b7; padding: 2px; background: #fff; }
+DIV.contentblock03 { background: url(/RelaisMaddalena/img/bg17.gif) repeat-x; padding: 10px 10px 0 10px; margin: 20px 0 0 0; }
+DIV.contentblock04 { background: url(/RelaisMaddalena/img/bg25.gif) no-repeat; padding:10px 20px; margin: 20px 0 0 0;  -moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px;}
+DIV.contentblock05 { background: #e6dab5 url(/RelaisMaddalena/img/bg04.gif) 0 100% repeat-x; padding: 15px 15px 0 15px; margin: 10px 0 0 0; }
+DIV.contentblock05 H2 { color: #866e1b; font-size: 11px; margin: 0; border-bottom: 1px dotted #b6a468; padding: 0 0 3px 0; }
+
+DIV.contentblock03 { background: url(/RelaisMaddalena/img/bg17.gif) repeat-x; padding: 20px 0 0 20px; margin: 20px 0 0 0; }
+DIV.contentblock03 DIV.a { width: 730px; overflow: hidden; background: url(/RelaisMaddalena/img/bg31.gif) 355px 0 repeat-y; }
+DIV.contentblock03 DIV.col { float: left; width: 335px; margin: 0 40px 0 0; }
+DIV.contentblock03 H2 { margin: 0; font-size: 18px; font-weight: normal; }
+DIV.contentblock03 UL { padding: 0; margin: 1em 0 0 0; font-weight: bold; }
+DIV.contentblock03 UL LI { float: left; width: 49%; padding: 0; margin: 0; }
+DIV.contentblock03 UL LI A { display: block; background: url(/RelaisMaddalena/img/dot01.gif) 0 6px no-repeat; padding: 0 0 0 10px; color: #104b7c; }
+DIV.contentblock03 UL LI A:hover { color: #6a83b3; }
+
+P.sort LABEL { float: left; margin: 0 5px 0 0; }
+P.sort SELECT { float: left; }
+
+textarea { width: 300px;}
+
+#col2 p {	margin-left: 5px;}
+
+/* Std. form */
+
+TABLE.form { border: none; width: 100%; margin-left: 5px;}
+TABLE.form TD.data { padding: 5px 10px 5px 0; }
+TABLE.form a { color:#D6CCBF;}
+TABLE.form .max2 { width: 550px; }
+TABLE.form .max { width: 310px; }
+TABLE.form .norm { width: 150px; }
+TABLE.form .small { width: 100px; }
+TABLE.form .min { width: 50px; }
+TABLE.form INPUT.date { width: 55px; }
+input#ctl00_plcCol1_ctl00_ctl00_DOB.date { width: 65px;}
+input#ctl00_plcCol1_ctl00_ctl00_btnCardContinue { width: 161px; font-size: 12px; background: url(/img/img-04.gif) no-repeat center;}
+input#ctl00_plcCol1_ctl00_ctl00_btnCardCancel {width: 161px; font-size: 12px; background: url(/img/img-04.gif) no-repeat center;}
+TABLE.form INPUT.time { width: 42px; }
+TABLE.form INPUT.max { width: 304px; }
+TABLE.form INPUT.norm { width: 144px;}
+TABLE.form .disabled { background: #eee; }
+TABLE.form INPUT,
+TABLE.form SELECT,
+TABLE.form IMG { vertical-align: middle; color: #513e46;}
+TABLE.form TR.error TH { color: #af0000; }
+TABLE.form TR.error TD { color: #af0000; }
+TABLE.form TR.error INPUT,
+TABLE.form TR.error SELECT,
+TABLE.form TR.error TEXTAREA { background: #ffe6e6; color: #af0000; }
+TABLE.form .submit { border: 1px solid #fff; background: #d4bc68; color: #866e1b; overflow: visible; padding: 1px 10px; cursor: pointer; font-size: 11px; font-weight: bold; margin: -1px 0 0 0; }
+TABLE.form TR.totalprice TH { font-weight: bold; font-size: 14px; }
+TABLE.form TR.totalprice TD { font-weight: bold; font-size: 14px; color: white; }
+TABLE.form TH.subheading { background: #6B535D; color: #D6CCBF; font-weight: bold; }
+TABLE.form TH.subheading DIV.f-right { font-weight: normal; }
+TABLE.form TABLE { margin: 0; width: auto; }
+TABLE.form TABLE TD { padding: 3px 10px 3px 0; border: none; }
+
+/* Progress steps */
+
+DIV.steps { float: right; background: #513e45 none no-repeat; line-height: 14px; margin-bottom:10px; }
+DIV.steps * { float: left; }
+DIV.steps UL { padding: 4px 0 4px 4px; }
+DIV.steps UL A { background: url(/RelaisMaddalena/img/step.png) no-repeat 0 -30px; margin: 0 4px 0 0; text-decoration: none; color: #513E46; }
+DIV.steps UL A SPAN { 
+color: black;cursor: pointer; }
+DIV.steps UL A SPAN.a { background: url(/RelaisMaddalena/img/step.png) 100% -30px no-repeat; padding: 1px; }
+DIV.steps UL A.active { background-position: 0 -60px; }
+DIV.steps UL A.active SPAN.a { background-position: 100% -60px; }
+DIV.steps UL A:hover { background-position: 0 -90px; }
+DIV.steps UL A:hover SPAN.a { background-position: 100% -90px; }
+DIV.steps UL DIV { background: url(/RelaisMaddalena/img/step.png) 0 -30px no-repeat; margin: 0 4px 0 0; color: white; }
+DIV.steps UL DIV SPAN.a { background: url(/RelaisMaddalena/img/step.png) 100% -30px no-repeat; padding: 1px; }
+DIV.steps UL DIV.active { background-position: 0 -60px; }
+DIV.steps UL DIV.active SPAN.a { background-position: 100% -60px; }
+DIV.steps UL SPAN.no { width: 16px; text-align: center; color: #fff; padding: 1px 0; font-weight: bold; }
+DIV.steps UL SPAN.label { 
+color: black !important;
+padding: 1px 5px; }
+
+
+
+/* Page actions */
+
+P.actions { margin: 1em 0 0 0; line-height: 14px; }
+P.actions * { float: left;  /*-moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px;*/}
+P.actions INPUT { overflow: visible; padding: 2px 10px; cursor: pointer; }
+P.actions SPAN.btn {
+display: block;
+width: auto;
+height: 47px;
+margin-right: 5px;
+}
+
+
+
+P.actions SPAN.cancel { 
+  }
+P.actions SPAN.cancel SPAN { /*background-position: 100% -60px !important;*/ }
+
+P.actions .regular INPUT { font-weight: normal !important; }
+
+/* Calendar */
+
+DIV.calendar2 { line-height: normal !important; width: 189px; margin: 10px 0 0 0; text-align: center; }
+DIV.calendar2 DIV.heading { background: #F6A828; font-weight: bold; color: #fff; border: 1px solid #fff; font-family: Tahoma, Arial, Helvetica, sans-serif; height: auto; width: auto; }
+DIV.calendar2 DIV.heading P { margin: 0 !important; padding: 3px 0 4px 0; text-align: center; }
+DIV.calendar2 DIV.heading A {  color: #FFFFFF;
+    padding: 5px 6px 2px;}
+ul.addons div.details div.cal div.calendar2 p.nomargin {background:none; border:0px; color:#8D7D84; display:none;}
+DIV.calendar2 DIV.heading A:hover { /*background: #000;*/ text-decoration: none; }
+DIV.calendar2 DIV.heading A.left { float: left; }
+DIV.calendar2 DIV.heading A.right { float: right; border-left: none; }
+DIV.calendar2 A { text-decoration: none; }
+DIV.calendar2 TABLE { margin: -1px 0 0 0; width: 100%; }
+DIV.calendar2 TABLE TH { border: 1px solid #fff !important; padding: 0 !important; text-align: center !important; font-size: 10px; font-weight: normal; }
+DIV.calendar2 TABLE TD { border: 1px solid #fff !important; padding: 0 !important; text-align: center; font-size: 10px; }
+DIV.calendar2 TABLE A { display: block; padding: 3px 0; color: #777; }
+DIV.calendar2 TABLE A:hover { background: #FFF0A5; color: #fff !important; text-decoration: none; }
+DIV.calendar2 TABLE TD A { width: 22px; }
+DIV.calendar2 TABLE TD DIV { width: 22px; padding: 3px 0; color: #A5D5E8; }
+DIV.calendar2 TABLE TD DIV.disableselected { width: 20px; padding: 3px 0; background: #F7EAEA; color: #343434 !important;} 
+DIV.calendar2 TABLE TD SPAN { display: block; width: 20px; padding: 3px 0; color: #777; background: #f5f5f5; }
+DIV.calendar2 TABLE TR.thead TH { padding: 3px 0 !important; color: #343434; font-weight: bold; background: #EEEEEE; border-top: none; }
+DIV.calendar2 TABLE TH { width: 100% !important; }
+DIV.calendar2 TABLE TH A { background: #eee; color: #bbb; padding: 3px 0; }
+DIV.calendar2 TABLE TH DIV { background: #eee; color: #bbb; padding: 3px 0; }
+DIV.calendar2 TABLE TD { background: #f6f5f5; }
+DIV.calendar2 TABLE TD.inuse { background: #e95559; }
+DIV.calendar2 TABLE TD.inuse A,
+DIV.calendar2 TABLE TD.inuse DIV { color: #592022; }
+DIV.calendar2 TABLE TD.available { background: url("ui-bg_glass_100_f6f6f6_1x400.png") repeat-x scroll 50% 50% #d0d0d0 !important;
+    border: 1px solid #CCCCCC;
+    color: #1C94C4;
+    font-size: 10px;
+    font-weight: bold;
+    outline: medium none;
+    padding: 5px 3px;
+}
+DIV.calendar2 TABLE TD.available A,
+DIV.calendar2 TABLE TD.available DIV { 
+    color: #1C94C4 !important; }
+DIV.calendar2 TABLE TD.off {  border: 1px solid #E2E2E2;
+    color: #A5D5E8;
+    font-weight: bold;
+    outline: medium none; }
+DIV.calendar2 TABLE TD.booked { background: #f9c688; }
+DIV.calendar2 TABLE TD.booked A,
+DIV.calendar2 TABLE TD.booked DIV { color: #463826; }
+DIV.calendar2 TABLE TD.maintenance { background: #b6acfc; }
+DIV.calendar2 TABLE TD.maintenance A,
+DIV.calendar2 TABLE TD.maintenance DIV { color: #3a2ba2; }
+DIV.calendar2 TABLE TD.byowner A,
+DIV.calendar2 TABLE TD.byowner DIV,
+DIV.calendar2 A.byowner { background: url(/RelaisMaddalena/img/bg21.gif) 100% 100% no-repeat; }
+DIV.calendar2 TABLE TD.byowner A:hover,
+DIV.calendar2 A.byowner { background: #e40000; }
+DIV.calendar2 A.selected { background: #FFF0A5; color: #fff !important; }
+
+DIV.calendar2 UL.actions { padding: 3px; margin: 0; /*border: solid #fff; border-width: 0 1px 1px 1px; background: #efe2ba;*/ line-height: normal; font-size: 10px; }
+DIV.calendar2 UL.actions A { border-style: solid;
+    border-width: 1px;
+    color: white;
+    float: left;
+    margin-left: -3px;
+    padding: 1px 5px;
+    text-decoration: none; background: none repeat scroll 0 0 #6B535D;  margin-right:3px;}
+DIV.calendar2 UL.actions A:hover { background: #AB6D8B;  }
+DIV.calendar2 UL.actions LI { padding: 0; margin: 0 3px 0 0; background: none; float: left; }
+DIV.calendar2 UL.actions LI.close { float: right; margin: 0; font-family: Verdana, Arial, Helvetica, sans-serif; }
+DIV.calendar2 UL.actions LI.close A { padding: 1px 4px 2px 4px; }
+
+UL.legend { margin: 1em 0 0 0; padding: 8px 0 0 0; font-size: 10px; list-style: none; line-height: normal; background: url(/RelaisMaddalena/img/bg13.gif) repeat-x; text-align: left; }
+UL.legend LI { float: left; width: 88px; padding: 1px 0; background: none !important; }
+UL.legend LI SPAN.swatch { float: left; border: 1px solid #cfbe8a; padding: 4px 5px; background: #fff; margin: 1px 5px 0 0;}
+UL.legend LI SPAN.inuse { background: #e95559; height:1px; width:0; }
+UL.legend LI SPAN.selected { background: #FFF0A5; height:1px; width:0; }
+UL.legend LI SPAN.available { background: #d0d0d0; height:1px; width:0; }
+UL.legend LI SPAN.disableselected {background:#F7EAEA; height:1px; width:0; }
+
+UL.legend LI SPAN.off { background: #eee; height:1px; width:0; }
+UL.legend LI SPAN.booked { background: #f9c688; height:1px; width:0; }
+UL.legend LI SPAN.maintenance { background: #b6acfc; height:1px; width:0; }
+UL.legend LI SPAN.byowner { background: #fff url(/RelaisMaddalena/img/bg21.gif) 100% 100% no-repeat; height:1px; width:0; }
+UL.legend LI SPAN.label { padding: 3px 0; }
+UL.addons UL.legend { background: none; padding: 0; width:230px; }
+UL.addons UL.legend li { width:75px; }
+
+TABLE.form DIV.calendar2 { float: left; margin: 0 10px 0 0; }
+TABLE.form UL.legend { float: left; margin: 0; background: none; padding: 0; }
+TABLE.form UL.legend LI { clear: both; }
+
+/* Property list */
+
+.praia { color: #8D7D84 !important; }
+.pinheiros { color: #8D7D84 !important; }
+.dunas { color: #8D7D84 !important; }
+.jardim { color: #8D7D84 !important; }
+.lagoa { color: #8D7D84 !important; }
+.villas { color: #8D7D84 !important; }
+.vista { color: #8D7D84 !important; }
+
+UL.properties01 { padding: 5px 5px 0; margin: 0; line-height: 14px; }
+UL.properties01 LI.item { background: none repeat scroll 0 0 #513E46;
+    float: left;
+    margin: 5px 0 0;
+    width: 100%; }
+UL.properties01 LI.item h1 span { /*margin:0 0 0 5px;*/ color:white !important;}
+UL.properties01 LI.hover DIV.a { border-color: #d9d9d9; }
+UL.properties01 DIV.a { padding: 1px; }
+UL.properties01 DIV.b { background:#513e46; /*-moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px;*/}
+ul.properties01 div.c {background:#6b535d none repeat scroll 0 0;}
+UL.properties01 DIV.img { width: 102px; float: left; margin:5px; }
+UL.properties01 DIV.img A { float: left; width: 100px; height: 75px; position: relative; }
+UL.properties01 DIV.img A SPAN { background: url(/RelaisMaddalena/img/ico_zoom.gif) no-repeat; position: absolute; width: 18px; height: 18px; left: 0; bottom: 0; cursor: pointer; }
+UL.properties01 DIV.img IMG { width: 100px; height: 75px; float: left; }
+UL.properties01 DIV.txt { width: 587px; padding: 8px 0 5px 0; }
+UL.properties01 H2 { margin: 0; max-width: 400px;}
+UL.properties01 DIV.price { float: right; width: 197px; margin-right: -26px; margin-top: -27px;}
+UL.properties01 DIV.price H3 { margin: 0; /*border-bottom: 1px dotted #bab195;*/ font-size:11px; padding: 0; color: #D6CCBF; }
+UL.properties01 DIV.price P.specialprice { float: right; margin: -15px 3px 0; font-weight: bold; }
+UL.properties01 DIV.price P.specialprice A { float: left; color: #D6CCBF; text-decoration: none; padding: 0 0 0 13px; background: url(/RelaisMaddalena/img/ico_external2.gif) 0 3px no-repeat; }
+UL.properties01 DIV.price P.specialprice A:hover { text-decoration: underline; }
+UL.properties01 UL.prices { padding: 0; margin: 12px 0 0 0; }
+UL.properties01 UL.prices LI { padding: 0; margin: 0; }
+UL.properties01 UL.prices LI.day { color: #D6CCBF; }
+UL.properties01 UL.prices LI.old { color: #D6CCBF; text-decoration: line-through; }
+UL.properties01 UL.prices LI.total { color: white; }
+UL.properties01 P { margin: 5px 0 0 0; max-width: 370px; }
+UL.properties01 P.booknow { margin: 10px 0 0 0; float: right; font-weight: bold;
+ }
+UL.properties01 P.booknow * { 	font-family:Arial;
+text-align: center; 
+	font-size:12px; 
+	color:#d9d9d9; 
+	display:block; 
+	font-weight:bold;
+	line-height:47px;
+	text-decoration:none;
+	width: 92px; 
+	height:47px;
+	margin:0 auto;
+	background: url(/img/img-09.gif) no-repeat  top;
+	border: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-right: 0;
+}
+.new-form-cnt table.table-newform td input {
+	width: 91px;
+	border: 1px solid #a17b8b;
+	font-size: 11px;
+	color: #8d7d84;
+}
+
+.new-form-cnt table.table-newform td input.invio {
+	font-family:Arial; 
+	font-size:12px; 
+	color:#d9d9d9; 
+	font-weight:bold;
+	line-height:47px;
+	text-decoration:none;
+	width:92px; 
+	height:47px;
+	margin:0 auto;
+	padding:0;
+	background:url(../img/img-09.gif) left top no-repeat;
+	border: 0;
+}
+
+UL.properties01 P.booknow A { background-position: 0 -120px; color: #c1d9d9; text-decoration: none; }
+UL.properties01 P.booknow A SPAN { cursor: pointer; }
+UL.properties01 P.booknow A:hover { background-position: 0 -160px; }
+UL.properties01 P.booknow A:hover SPAN {opacity: 0.8;}
+UL.properties01 UL.tools { margin: 2px 0 0 0; padding: 0; }
+UL.properties01 UL.tools * { float: left; }
+UL.properties01 UL.tools A { padding: 0 10px 0 14px; background: url(/RelaisMaddalena/img/ico_external.gif) 0 2px no-repeat; text-decoration: none; color: #D6CCBF; }
+UL.properties01 UL.tools A:hover { text-decoration: underline; }
+UL.properties01 TABLE { width: auto; margin: 0; }
+UL.properties01 TABLE TH { padding: 4px 10px 5px 0; line-height: 14px !important; width: 100%; }
+UL.properties01 TABLE TH.off { background: url(/RelaisMaddalena/img/dot03.gif) 0 4px no-repeat; padding-left: 20px; }
+UL.properties01 TABLE TH.on { background: url(/RelaisMaddalena/img/dot02.gif) 0 4px no-repeat; padding-left: 20px; }
+UL.properties01 TABLE TD { line-height: 14px !important; }
+UL.properties01 TABLE TD.actions { padding: 1px 0; }
+UL.properties01 TABLE TD.actions A { display: block; white-space: nowrap; background: url(/RelaisMaddalena/img/bg12.gif) 0 -290px no-repeat; text-align: center; color: #8D7D84; text-decoration: none; }
+UL.properties01 TABLE TD.actions A SPAN { display: block; background: url(/RelaisMaddalena/img/bg12.gif) 100% -290px no-repeat; padding: 3px 10px 4px 10px; cursor: pointer; }
+UL.properties01 TABLE TD.actions A:hover { background-position: 0 -320px; }
+UL.properties01 TABLE TD.actions A:hover SPAN { background-position: 100% -320px; }
+UL.properties01 TABLE TD.actions DIV { display: block; white-space: nowrap; background: url(/RelaisMaddalena/img/bg12.gif) 0 -350px no-repeat; text-align: center; color: #8D7D84; cursor: default; }
+UL.properties01 TABLE TD.actions DIV SPAN { display: block; background: url(/RelaisMaddalena/img/bg12.gif) 100% -350px no-repeat; padding: 3px 10px 4px 10px; }
+
+
+/* Popup */
+
+#popup-header { height: 54px; background: url(/RelaisMaddalena/img/bg22.jpg) no-repeat; position: relative; }
+#popup-box1 { padding: 20px; text-align: justify; }
+#popup-box1 DIV.contentcol07 { width: 287px; margin: 0 20px 0 0; }
+
+/* Pages */
+
+UL.pages {    line-height: normal;
+    list-style: none outside none;
+    margin: 1em 0 0 !important;
+    padding: 1px !important; }
+	ul.properties01 li.item h3 {margin-top:32px;}
+UL.pages LI { float: left; padding: 0 !important; margin: 0 !important; background: none !important; }
+UL.pages LI A { float: left; padding: 1px 5px; margin-right: 1px; background: #faf5e7; border: 1px solid #faf5e7; color: #073f92; text-decoration: none; }
+UL.pages LI A:hover { border-color: #7f96c2; background: #fff; color: #7f96c2; text-decoration: none; }
+UL.pages LI A.active { border-color: #7f96c2; background: #7f96c2; color: #fff; text-decoration: none; }
+UL.pages LI SPAN { float: left; padding: 1px 5px; margin-right: 1px; background: #e8e8e8; border: 1px solid #ddd; color: #ddd; }
+UL.pages LI.label { float: left; padding: 2px 6px !important; }
+UL.pages LI.info { float: right; padding: 2px 6px !important; }
+UL.pages LI.info A { float: none; padding: 0; margin: 0; color: #888; background: none; text-decoration: underline; border: none; }
+
+/* Messages */
+
+P.msg-error { border: 2px solid #513E46; color: #513E46; background: #fff; padding: 5px 10px; font-weight: bold; text-align: center; line-height: normal; }
+P.msg-info { border: 2px solid #513E46; color: #513E46; background: #fff; padding: 5px 10px; text-align: center; line-height: normal; }
+P.msg-important { border: 2px solid #513E46; color: #513E46; background: #fff; padding: 5px 10px; font-weight: bold; text-align: center; line-height: normal; font-size: 14px; }
+
+/* Addons list */
+
+UL.addons { /*padding: 5px 0 0 0;*/ margin: 0; line-height: 14px; }
+UL.addons LI.item { margin: 5px 0 0 0; float: left; width: 100%; }
+UL.addons LI.hover DIV.a { border-color: #7d7d7d; }
+UL.addons LI.open DIV.a { border-color: #004687; }
+UL.addons LI.open DIV.details { display: block !important; overflow:visible; }
+UL.addons DIV.a { /*border: 1px solid #fff;*/ -moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px;}
+UL.addons DIV.b { background:#513E46; }
+UL.addons DIV.img { width: 102px; float: left; margin:5px; }
+UL.addons DIV.img A { float: left; width: 100px; height: 75px; position: relative; }
+UL.addons DIV.img A SPAN { background: url(/RelaisMaddalena/img/ico_zoom.gif) no-repeat; position: absolute; width: 18px; height: 18px; left: 0; bottom: 0; cursor: pointer; }
+UL.addons DIV.img IMG { width: 100px; height: 75px; float: left; }
+UL.addons DIV.txt { width: 610px; padding: 8px 0 5px 0; }
+UL.addons H2,
+UL.addons H3 { margin: 0; padding: 3px 0 0 0; font-size: 17px; }
+UL.addons P { margin: 7px 0 0 0; }
+UL.addons P.price { color: white; float: right; padding: 5px 10px 0 0; margin: 0; font-weight: bold; }
+UL.addons P.booknow { margin: 0; float: right; font-weight: bold; width: 80px; text-align: center; }
+UL.addons P.booknow * {
+text-align: center; 
+	color:#d9d9d9; 
+	display:block;
+	text-decoration:none;
+	width: 92px; 
+	height:47px;
+	margin:0 auto;
+	background: url(/img/img-09.gif) no-repeat  top;
+	border: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-right: 0;
+	font: small-caps bold 14px/47px Arial;
+}
+UL.addons P.booknow A { float: left; background-position: 0 -30px; color: #c1d9d9; text-decoration: none; position: relative; width: 80px; }
+UL.addons P.booknow A SPAN {  }
+UL.addons P.booknow A:hover { background-position: 0 -260px; }
+UL.addons P.booknow A:hover SPAN { }
+UL.addons P.showdetails { margin: 0; float: right; font-weight: bold; text-align: center; }
+UL.addons P.showdetails * { display: block; background: url(/RelaisMaddalena/img/bg12.gif) no-repeat; }
+UL.addons P.showdetails A { background-position: -180px -230px; width: 25px; height: 25px; }
+UL.addons P.showdetails A:hover { background-position: -210px -230px; }
+UL.addons P.showdetails A.open { background-position: -240px -230px; }
+UL.addons P.showdetails A.open:hover { background-position: -270px -230px; }
+UL.addons DIV.details { margin: 10px 0 0 0; display: none; }
+UL.addons DIV.details DIV.numbers { float: left; width: 3	25px; margin: 18px 10px 0 0; overflow: hidden; width:345px;}
+UL.addons DIV.details DIV.numbers TEXTAREA { overflow: auto; width: 245px; height: 75px; }
+UL.addons DIV.details DIV.cal { float: left; width: 220px; margin:9px 0 0 25px;}
+UL.addons DIV.details DIV.cal DIV.calendar2 { margin: 0; }
+ul.addons div.details div.cal div.calendar2 p { -moz-border-radius: 3px 3px 3px 3px;
+    background: url("ui-bg_gloss-wave_35_f6a828_500x100.png") repeat-x scroll 50% 50% #F6A828;
+    border: 1px solid #E78F08;
+    color: #FFFFFF;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0;
+    padding: 4px;
+    text-align: center;}
+UL.addons TABLE.form TH { font-weight: normal; }
+UL.addons TABLE.form TD { }
+UL.addons TABLE.form TR.totalprice TH { font-weight: bold; font-size: 11px; }
+UL.addons TABLE.form TR.totalprice TD { font-weight: bold; font-size: 11px; }
+UL.addons B.dates { padding: 0 5px; background: #dce4f2; color: #004687; }
+
+UL.addons2 LI.open DIV.item { background: #fff; }
+UL.addons2 LI.open DIV.details { background: #fff; }
+
+DIV.colset01 { background: url(/RelaisMaddalena/img/bg24.gif) 355px 0 repeat-y; margin: 1em 0 0 0; }
+DIV.colset01 H2 { margin: 0; }
+DIV.colset01 H3 { margin: 0; }
+DIV.colset01-col01 { float: left; width: 340px; margin-right: 30px; }
+DIV.colset01-col02 { float: left; width: 310px; }
+
+/* Data table */
+
+TABLE.data { width: 98%; margin-left: 5px;}
+TABLE.data TH { padding: 5px 8px; line-height: normal; font-weight: bold; background: none repeat scroll 0 0 #6B535D;
+    color: #D6CCBF; }
+TABLE.data TD { padding: 5px 8px; /*border: solid #f1f5f9; border-width: 1px 0;*/ line-height: normal; background: #513E46; }
+TABLE.data TD.actions { text-align: right; white-space: nowrap; width: 1%; padding: 3px 5px 3px 0; }
+TABLE.data TD.actions A { display: block; text-align: center; text-decoration: none; border: 1px solid; border-color: #e4d7b3 #b89f47 #b89f47 #e4d7b3; background: #faf5e7; color: #333; padding: 1px 5px; }
+TABLE.data TD.actions A:hover { background: #e4d7b3; border-color: #b89f47; }
+TABLE.data TD.actions SPAN { display: block; text-align: center; text-decoration: none; border: 1px solid; border-color: #f4eedf #e1d6b1 #e1d6b1 #f4eedf; background: #fdfbf5; color: #a9a9a9; padding: 1px 5px; }
+TABLE.data TR.even TD { background-color: #68515b; }
+TABLE.data TD.input { padding: 1px 5px; }
+TABLE.data TD.ico-sms { background-image: url(/RelaisMaddalena/img/ico_sms.gif); background-repeat: no-repeat; background-position: 9px 4px ; padding-left: 30px; }
+TABLE.data TD.ico-mail { background-image: url(/RelaisMaddalena/img/ico_mail2.gif); background-repeat: no-repeat; background-position: 8px 6px ; padding-left: 30px; }
+TABLE.data TD.ico-email { background-image: url(/RelaisMaddalena/img/ico_email.gif); background-repeat: no-repeat; background-position: 8px 6px ; padding-left: 30px; }
+
+#pagetools { float: right; margin: 5px 6px 0 0; font-weight: bold; }
+#pagetools A { color:#D6CCBF; float: left; padding: 0 0 0 30px; text-decoration: none; }
+#pagetools A:hover { text-decoration: underline; }
+#pagetools A.print { background: url(/RelaisMaddalena/img/ico_print.gif) 10px 2px no-repeat; }
+
+/* News */
+
+UL.news { margin: 0; line-height: 16px; }
+UL.news LI { float: left; padding: 0; margin:5px 0 0; width: 100%; clear: both; }
+UL.news LI A { display: block; text-decoration: none;  padding: 10px 10px 10px 20px; background:#513E46; -moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px; color: #8D7D84; }
+UL.news LI A SPAN.date { color: #8D7D84; }
+UL.news LI A:hover { color: #8D7D84; }
+
+/* Messaging */
+
+DIV.messagebox { background:#513E46; -moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px; margin:5px 0; padding: 3px; line-height: 14px; }
+DIV.messagebox UL { padding: 0; margin: 0; }
+DIV.messagebox UL LI { /*ackground: url(/RelaisMaddalena/img/bg16.gif) 0 100% repeat-x;*/ padding: 0 !important; margin: 0 !important; }
+DIV.messagebox UL LI A { color: #8D7D84; display: block; padding: 9px 10px 7px 30px; text-decoration: none; }
+DIV.messagebox UL LI A:hover { color: #8D7D84; }
+DIV.messagebox UL LI A.sms { font-weight: bold; background: url(/RelaisMaddalena/img/ico_sms.gif) 8px 7px no-repeat; }
+DIV.messagebox UL LI A.mail { font-weight: bold; background: url(/RelaisMaddalena/img/ico_mail2.gif) 7px 9px no-repeat; }
+DIV.messagebox UL LI A.email { font-weight: bold; background: url(/RelaisMaddalena/img/ico_email.gif) 7px 9px no-repeat; }
+DIV.messagebox TABLE { margin: 0; }
+DIV.messagebox TABLE TD { background:none; padding: 6px 0 6px 5px; }
+
+P.showall { padding: 10px; margin: 0; }
+P.showall A { float: left; padding: 0 10px 0 0; background: url(/RelaisMaddalena/img/dot01.gif) 100% 4px no-repeat; text-decoration: none; }
+P.showall A:hover { text-decoration: underline; }
+
+/* Filter */
+
+DIV.filter { margin: 1em 0 0 0; padding: 10px; line-height: normal; background: none repeat scroll 0 0 #6B535D;
+    color: #D6CCBF; }
+DIV.filter LABEL { float: left; margin: 0 5px 0 0; padding-top: 2px; }
+DIV.filter INPUT { float: left; margin: 0 5px 0 0; }
+DIV.filter INPUT.default { width: 100px; }
+DIV.filter IMG { float: left; margin: 0 5px 0 0; }
+DIV.filter IMG.ico { cursor: pointer; }
+DIV.filter SELECT { float: left; margin: 0 5px 0 0; }
+DIV.filter INPUT.btn-main { border: none; background: #ddd; color: #343434; overflow: visible; padding: 1px 2px; cursor: pointer; }
+DIV.filter INPUT.btn { border: none; background: #ddd; color: #343434; overflow: visible; padding: 1px 2px; cursor: pointer; }
+
+/* Printform */
+
+DIV.printable { border: 1px dotted #000; padding: 1em 2em 2em 2em; margin: 1em 0 0 0; color: #000; line-height: 16px; background: #fff; }
+
+TABLE.blank { width: auto; }
+TABLE.blank TH { padding: 0 10px 0 0; color: #000; }
+TABLE.blank TD { padding: 0; color: #000; }
+
+DIV.stripe1 { border-top: 1px dotted #aaa; height: 1px; overflow: hidden; margin: 1em 0 0 0; }
+DIV.stripe2 { border-top: 1px dotted #ece3ca; height: 1px; overflow: hidden; margin: 2px 0 0 0; }
+
+TABLE.invoice { width: 100%; border: 1px solid #aaa; }
+TABLE.invoice TH { color: #000; padding: 3px 10px; border: solid #aaa; border-width: 1px 0 2px 0; }
+TABLE.invoice TD { color: #000; padding: 3px 10px; border: solid #aaa; border-width: 1px 0 0 0; }
+TABLE.invoice TR.total TH { border-width: 2px 0 0 0; font-size: 14px; }
+TABLE.invoice TR.total TD { border-width: 2px 0 0 0; font-size: 14px; font-weight: bold; }
+
+UL.contacts { margin: 1em 0 0 0; padding: 0; }
+UL.contacts LI { background: none; margin: 0 20px 0 0; padding: 0; float: left; }
+
+/* Tabs */
+
+UL.tabs { line-height: normal;
+    margin: 1em 0 5px 0;
+    padding: 0;
+    position: relative; }
+UL.tabs LI { margin: 0 2px 0 0; float: left; padding: 0; background: none; }
+UL.tabs LI A { float: left; padding: 3px 10px; background: url(/RelaisMaddalena/img/menu_bg.jpg) repeat-x scroll 0 0 transparent; text-decoration: none; color: white; }
+UL.tabs LI A.active { border-bottom: none; padding: 3px 10px 4px 10px; background: url(/RelaisMaddalena/img/bg_menu2.jpg) repeat-x scroll 0 0 transparent; }
+DIV.tabs-content { /*border: 1px solid #efe2b9;padding: 0 1em 1em 1em; background: #fff;*/ overflow:hidden;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Gallery */
+
+UL.gallery01 { margin: 5px 0 0 0; }
+UL.gallery01 * { float: left; }
+UL.gallery01 LI { padding: 0; margin: 5px 5px 0 0; }
+UL.gallery01 LI A { border: 1px solid #efe1b7; padding: 2px; background: #fff; float: left; }
+UL.gallery01 LI A:hover { border-color: #cfb65c; }
+
+DIV.checkroom01 { background: url(/RelaisMaddalena/img/bg17.gif) repeat-x; }
+
+/**/
+
+DIV.iframe { height: 200px; overflow: auto; margin: 10px 0 0 0; border: 2px solid #e9e1c5; background: #fdfbf2 }
+DIV.iframe DIV.a { padding: 0 1em 1em 1em; }
+
+/* Food */
+
+TABLE.foodmenu { }
+TABLE.foodmenu TD { padding: 6px 10px; line-height: 15px; background: #fbf9f4; border: solid #fff; border-width: 2px 0; }
+TABLE.foodmenu TR.even TD { background: #f6f4ee; }
+TABLE.foodmenu TD.price { white-space: nowrap; font-weight: bold; }
+TABLE.foodmenu TD H3 { margin: 0; color: #616161; }
+TABLE.foodmenu TD P { margin: 0; font-style: italic; }
+
+DIV.restaurant01 { height: 156px; color: #fff; overflow: hidden; }
+DIV.restaurant01 DIV.a { padding: 23px 230px 0 240px; }
+DIV.restaurant01 H1 { color: #e6dab5; margin: 0; font-size: 18px; font-weight: normal; }
+DIV.restaurant01 P { line-height: 18px; margin: 15px 0 0 0; }
+
+DIV.restaurant-header01 { background: url(/RelaisMaddalena/img/restaurant01.jpg) no-repeat; }
+DIV.restaurant-header02 { background: url(/RelaisMaddalena/img/restaurant02.jpg) no-repeat; }
+DIV.restaurant-header03 { background: url(/RelaisMaddalena/img/restaurant03.jpg) no-repeat; }
+DIV.restaurant-header04 { background: url(/RelaisMaddalena/img/restaurant04.jpg) no-repeat; }
+DIV.restaurant-header05 { background: url(/RelaisMaddalena/img/restaurant05.jpg) no-repeat; }
+
+/* Media list */
+
+DIV.pics01 { width: 100%; overflow: hidden; }
+DIV.pics01 A SPAN { cursor: pointer; }
+DIV.pics01 A SPAN.img { float: left; border: 1px solid #EFE1B7; padding: 2px; background: #fff; }
+DIV.pics01 A SPAN.img SPAN { float: left; width: 80px; height: 80px; background-color: #fff; background-position: 50% 50%; background-repeat: no-repeat; float: left; cursor: pointer; }
+DIV.pics01 A SPAN.img IMG { display: none; }
+DIV.pics01 A:hover SPAN.img { border-color: #CFB65C; }
+
+/* Filter */
+
+DIV.filter01 { background: #FAF5E7; font-size: 11px; margin: 5px 0 0 0; }
+DIV.filter01 P { padding: 2px; float: left; margin: 0; }
+DIV.filter01 SELECT { float: left; font-size: 11px; }
+DIV.filter01 UL.view { float: right; margin: 0; padding: 2px 2px 0 2px; }
+DIV.filter01 UL.view LI { float: left; padding: 0; margin: 0; background: none; }
+DIV.filter01 UL.view A.big { background: url(/RelaisMaddalena/img/ico_thumb_big.gif) 6px 5px no-repeat; }
+DIV.filter01 UL.view A.small { background: url(/RelaisMaddalena/img/ico_thumb_small.gif) 6px 5px no-repeat; }
+DIV.filter01 UL.view A.list { background: url(/RelaisMaddalena/img/ico_thumb_list.gif) 6px 5px no-repeat; }
+DIV.filter01 UL.view A { float: left; color: #202020; text-decoration: none; padding: 2px 8px 3px 24px; }
+DIV.filter01 UL.view A:hover { background-color: #D6C27E; }
+DIV.filter01 UL.view A.active { background-color: #D6C27E; }
+
+/* Thumbslist */
+
+DIV.media1 TABLE { width: 100%; overflow: hidden; margin: 1em 0 0 0; }
+DIV.media1 TABLE A { text-decoration: none; }
+DIV.media1 TABLE TH { padding: 0 0 5px 0; margin: 0; background: none; }
+DIV.media1 TABLE TH A { display: block; width: 80px; }
+DIV.media1 TABLE TH A IMG { border: 2px solid #EFE1B7; padding: 1px; background: #fff; }
+DIV.media1 TABLE TH A:hover IMG { border-color: #CFB65C; }
+DIV.media1 TABLE TD { padding: 3px 4px 5px 0; margin: 0; width: 146px; background: none; font-size: 11px; }
+DIV.media1 TABLE P { margin: 0; }
+DIV.media1 TABLE P.heading { font-size: 12px; font-weight: bold; }
+DIV.media1 TABLE P.heading A { color: #5d4100; float: none; }
+DIV.media1 TABLE P.heading A:hover { color: #976a00; }
+
+DIV.media2 TABLE { width: 100%; overflow: hidden; margin: 1em 0 0 0; }
+DIV.media2 TABLE A { text-decoration: none; }
+DIV.media2 TABLE TH { padding: 0 0 5px 0; margin: 0; background: none; }
+DIV.media2 TABLE TH A { display: block; width: 140px; }
+DIV.media2 TABLE TH A IMG { border: 2px solid #EFE1B7; padding: 1px; background: #fff; }
+DIV.media2 TABLE TH A:hover IMG { border-color: #CFB65C; }
+DIV.media2 TABLE TD { padding: 3px 4px 5px 0; margin: 0; width: 215px; background: none; font-size: 11px; }
+DIV.media2 TABLE P { margin: 0; }
+DIV.media2 TABLE P.heading { font-size: 12px; font-weight: bold; }
+DIV.media2 TABLE P.heading A { color: #5d4100; float: none; }
+DIV.media2 TABLE P.heading A:hover { color: #976a00; }
+
+/* Sitemap */
+
+UL.sitemap-tree { font-weight: bold; margin: 10px 0 0 0; font-size: 12px; }
+UL.sitemap-tree LI { background: url(/RelaisMaddalena/img/dot01.gif) 0 5px no-repeat; padding: 0 0 0 10px; }
+UL.sitemap-tree A { text-decoration: none; color: #af0000; }
+UL.sitemap-tree A:hover { text-decoration: underline; }
+UL.sitemap-tree UL { padding: 5px 0 5px 10px !important; margin: 0; font-weight: normal; font-size: 11px; }
+UL.sitemap-tree UL A { color: #6a83bc; }
+
+/* Christmas */
+
+#christmas01 { background: url(/RelaisMaddalena/img/christmas01.png) no-repeat; height: 70px; position: absolute; top: 0; right: 0; width: 362px; z-index: 5; }
+* HTML #christmas01 { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/christmas01.png', sizingMethod='crop'); background: none; }
+#christmas02 { background: url(/RelaisMaddalena/img/christmas02.png) no-repeat; height: 311px; position: absolute; top: 0; right: 0; width: 180px; margin: 70px 0 0 0; padding: 0; z-index: 5; }
+* HTML #christmas02 { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/christmas02.png', sizingMethod='crop'); background: none; }
+
+#term {margin-left:589px !important; margin-bottom: 6px; margin-left: 615px;}
+
+select#ctl00_ctl02_ctl00_ddlCompany {margin-left: 69px;
+    width: 112px;}
+	
+p.print {float:right;}
+#divPKDetail { padding-right:50px !important;}
+
+ul.properties01 li.item h1 {margin-left:5px;}
+
+
+#ctl00_plcCol1_ctl00_pnlOwner ul.properties01 div.price {margin-top:0 !important;}
+input#ctl00_plcCol1_ctl00_Email1 {margin-right:10px;}
+
+/* Cvc Number tip */
+#cvctip { position: absolute; left: -100px; top: -100px; width: 300px; margin: -2px 0 0 -2px; cursor: default; }
+#cvctip-inner { background:#6B535D none repeat scroll 0 0;border:1px solid #D7DCE1; padding: 8px 10px 8px 27px; color: #D6CCBF; line-height: 14px; }
+
+
+ul.properties01 div.descriptionbox {
+    background-image: url(/RelaisMaddalena/img/box.png);
+    float: right;
+    height: 79px;
+    width: 79px;
+}
+
+select#ctl00_ctl00_ctl02_ctl00_ddlZone, select#ctl00_ctl00_ctl02_ctl00_ddlPropertyTypes {width:86px !important;}
+input#ctl00_ctl00_ctl02_ctl00_DiscountCode {width:80px !important;}
+
+input#ctl00_ctl00_ctl02_ctl00_StartIn, input#ctl00_ctl00_ctl02_ctl00_EndOut { width:56px !important;}
+
+TABLE.smallform label, span#ctl00_ctl02_ctl00_Label2, span#ctl00_ctl02_ctl00_Label1, #sidebar table.smallform th { font-size:11px;}
+
+select#ctl00_ctl02_ctl00_ddlZone, select#ctl00_ctl02_ctl00_ddlPropertyTypes {width:89px;}
+input#ctl00_ctl02_ctl00_DiscountCode {width:87px;}
+
+select#ctl00_ctl00_ctl02_ctl00_ddlCompany {margin-left: 50px;
+    width: 125px;}
+
+
+h2#ctl00_ctl00_basketCaption {
+	color: #AC9CA3 !important;
+	font-weight: bold;
+	margin: 0 0 11px;
+	padding: 5px 0;
+	text-align: center;
+	background: #2a1c21;
+	font-size: 12px;
+}
+
+.heading h2{
+	color: #AC9CA3 !important;
+	font-weight: bold;
+	margin: 0 0 11px;
+	padding: 3px 0;
+	text-align: center;
+	background: #2a1c21;
+	font-size: 12px;
+}
+
+
+    
+h3 {padding-left: 5px;
+	color: #ac9ca3 !important; text-decoration: none;
+}
+
+h2 {
+	color: white !important;
+	font-weight: bold;
+	font-style: normal;
+	padding-left: 5px;
+}
+
+.nopic {
+	visibility: hidden;
+}
+
+#TB_caption {
+
+}
+
+.h3edit {
+	margin: 0 !important;
+}
+
+#ctl00_plcCol1_ctl00_ctl00_pnlSignUp, #ctl00_plcCol1_ctl00_ctl00_userProfile_pnlContactInfo, #ctl00_plcCol1_ctl00_ctl00_pnlCreditCard, #ctl00_plcCol1_ctl00_ctl00_pnlBookingFields {
+	padding: 0 5px;
+}
+
+.price {
+	font-size: 13px;
+	color: white !important;
+	
+}
+.req { color: gray !important; font-family: Verdana; }
+
+
+#ctl00_plcCol1_ctl00_ctl00_userProfile_btnEditContact {
+	width: 161px;
+	font-size: 12px;
+	background: url(/img/img-04.gif) no-repeat center;
+}
+
+#ctl00_plcCol1_ctl00_ctl00_ddlCompany {
+	width: 130px;
+}
+
+#ctl00_plcCol1_ctl00_cupComponent_EmailNotice {
+	width: 20px;
+}
+
+
+#digicert {
+	height: 90px;
+	background: url(https://relaismaddalena-bookings.elinapms.com/media/17004/digicert_seal.png) no-repeat center center;
+}
+
+div#digicert-seal {padding-bottom: 20px;}
+div#digicert-seal img {width: 65px !important;}
+
+
+.red, .error {
+color: 
+#af0000;
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+
+#plcCol1_ctl00_btnSendMePassword{
+
+    background: #abc839;
+    background: -moz-linear-gradient(top, #abc839 0%, #93bb3c 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#abc839), color-stop(100%,#93bb3c));
+    background: -webkit-linear-gradient(top, #abc839 0%,#93bb3c 100%);
+    background: -o-linear-gradient(top, #abc839 0%,#93bb3c 100%);
+    background: -ms-linear-gradient(top, #abc839 0%,#93bb3c 100%);
+    background: linear-gradient(to bottom, #abc839 0%,#93bb3c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abc839', endColorstr='#93bb3c',GradientType=0 );
+    font-family: "Arapey", sans-serif;
+    border: 1px solid #84a934;
+    font-weight: 100!important;
+    color: #fff;
+    font-size: 17px;
+    height: 40px;
+    text-shadow: none;
+	border-radius:5px;
+}
+
+
+#plcCol1_ctl00_btnSendMePassword:hover{
+
+
+background: #69ad32;
+    text-decoration: none;
+    color: #fff;}
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */

@@ -1,0 +1,1097 @@
+a:hover {
+	text-decoration: none;
+}
+
+p {
+	color: #6a686b;
+	font-family: Ek Mukta;
+}
+
+.actionsTools a {
+	font-size: 14px;
+}
+
+body#ElinaPBE {
+	background: #f8f8f8;
+	font-family: "Ek Mukta", sans-serif !important;
+}
+
+body {
+	font-size: 14px;
+	font-family: "Ek Mukta", sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+
+#ChooseAddsElinaPBE div.contentInside div.AddOnsContainerElinaPBE div.list_entry_addon.closed p {
+	margin: 0px;
+	-ms-word-break: break-all;
+	word-break: break-all;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+#addonInfoDescription {
+
+	font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 100;
+	font-family: "Arapey", Helvetica, sans-serif;
+}
+
+#navigation {
+display: none;	
+}
+
+
+footer ul {
+	margin: 15px auto 0;
+}
+
+p.priceAddon {
+	font-size: 14px;
+	line-height: 1.3;
+}
+
+.addonDescriptionContainer {
+	
+}
+
+.addonDescriptionContainer p {
+	display: block;
+	font-size: 14px;
+	line-height: 1.3;
+}
+
+.descriptionPar p {
+	font-size: 14px;
+}
+
+#newMember p {
+	font-size: 14px;
+}
+
+header {
+	box-shadow: 0 1px 4px rgba(0,0,0,.6);
+	position: relative;
+	z-index: 3;
+}
+
+#nav {
+	padding-top: 24px;
+}
+
+header p, header ul {
+	margin: 0;
+	padding: 0;
+}
+
+.top-bar {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+footer {
+	clear: both;
+}
+
+label {
+	font-family: Ek Mukta;
+	font-weight: 700;
+	color: #3d2e34;
+}
+
+
+
+input[type="text"] {
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.18);
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.18);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.18);
+	-webkit-transition: border linear .2s,box-shadow linear .2s;
+	-moz-transition: border linear .2s,box-shadow linear .2s;
+	-o-transition: border linear .2s,box-shadow linear .2s;
+	transition: border linear .2s,box-shadow linear .2s;
+	font-size: 14px;
+	line-height: 1.7;
+}
+
+.btn.btn-primary, .btn, .btn.small,.btn-primary, .btn.btn-primary, input#bookingInputButton.btn.btn-primary, input#searchInputButton.btn, a.btn.btn-secondary, input#loginButton.btn {
+	background: #abc839;
+	background: -moz-linear-gradient(top, #abc839 0%, #93bb3c 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#abc839), color-stop(100%,#93bb3c));
+	background: -webkit-linear-gradient(top, #abc839 0%,#93bb3c 100%);
+	background: -o-linear-gradient(top, #abc839 0%,#93bb3c 100%);
+	background: -ms-linear-gradient(top, #abc839 0%,#93bb3c 100%);
+	background: linear-gradient(to bottom, #abc839 0%,#93bb3c 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abc839', endColorstr='#93bb3c',GradientType=0 );
+	font-family: "Arapey", sans-serif;
+	border: 1px solid #84a934;
+	font-weight: 100!important;
+	color: #fff;
+	font-size: 17px;
+	height: 40px;
+	text-shadow: none;
+}
+
+.btn.btn-primary:hover, .btn:hover {
+	background: #abc839;
+	border: 1px solid #84a934;
+	color: #544048;
+}
+
+#loggedInElinaPBEBar {
+	background: #544048;
+	position: relative;
+	z-index: 2;
+	box-shadow: 0 1px 4px rgba(0,0,0,.4);
+	top: 0 !important;
+}
+
+#ElinaPBE header div.container {
+	height: 70px;
+}
+
+/*#loggedInElinaPBEBar.loggedOut {
+display: none;	
+}*/
+
+.row {
+	margin: 0;
+	padding: 0;
+}
+
+div.loginBoxPBE {
+	float: right;
+	width: 29%;
+	background-color: #f0f0f0;
+	padding: 2%;
+	border-radius: 10px;
+	background: #f0f0f0;
+	border: 1px solid #cfc6ca;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	margin-right: 0;
+}
+
+div.loginBoxPBE label {
+	font-size: 14px;
+}
+
+.startBookingForm {
+	box-shadow: none;
+	border-radius: 10px;
+	background: #fff;
+	border: 1px solid #cfc6ca;
+}
+
+input#searchInputField.inputFields {
+	height: 40px;
+}
+
+#booking_form div.row.sectionsBook h2 {
+	margin-bottom: 10px;
+}
+
+div.loginBoxPBE h2 {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+div.loginBoxPBE a {
+	color: #3d2e34;
+	font-weight: 300;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.loginBoxPBE input {
+	width: 99%;
+}
+
+.fieldElina.bookButtonElina #loginButton {
+	margin-top: 10px;
+}
+
+a.btn {
+	line-height: 1.5em;
+}
+
+div.pictureContainerElinaPBE {
+	box-shadow: none;
+	width: 23%;
+	margin-right: 1%;
+}
+
+.cont.expandPicturePBE {
+	border-radius: 10px;
+}
+
+div.descriptionPBE {
+	width: 54%;
+}
+
+div.descriptionPBE h2 {
+	text-shadow: rgba(0,0,0,0.3) 0 1px 1px;
+}
+
+.pricesAndActions {
+	margin-right: 1%;
+}
+
+.close {
+	float: none;
+	opacity: 0.9;
+}
+
+.processStep {
+	border: 1px solid #cfc6ca;
+}
+
+div#viewBox, div#editBox {
+	border: 1px solid #cfc6ca;
+	background: #fff;
+	border-radius: 5px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+div#viewBox a, div#editBox a {
+	font-size: 14px;
+}
+
+a.offerTxt {
+	font-size: 14px;
+}
+
+div#viewBox h2, div#editBox h2, #rowFocusChoice h2, div.disclaimer.finalCheckoutBar h2 {
+	text-align: center;
+	float: none;
+	display: block;
+	font-size: 28px;
+	padding: 10px;
+	color: #3d2e34;
+}
+
+#rowFocusBoxTitle a {
+	display: block;
+	clear: both;
+	float: none;
+}
+
+div#viewBox p, div#editBox p {
+	margin: 0;
+}
+
+div#viewBox h3, div#editBox h3 {
+	margin-top: 10px;
+}
+
+#sidebarElinaPBE {
+	margin-top: -10px;
+}
+
+#contentElinaPBE {
+	padding-top: 10px;
+}
+
+a.termsBox {
+	color: #3d2e34;
+}
+
+#itemsBoxElinaPBE #rowFocusChoice {
+	border: 1px solid #cfc6ca;
+	background: #fff;
+}
+
+#itemsBoxElinaPBE #rowFocusChoice .pricesAndActions .pictureContainerElinaPBE {
+	margin-top: 20px;
+}
+
+#itemsBoxElinaPBE #rowFocusChoice .pictureContainerElinaPBE img {
+	border-radius: 10px;
+}
+
+div#rowFocusChoice .pricesAndActions {
+	clear: both;
+}
+
+div#rowFocusChoice .pricesAndActions .descriptionPBE h5 {
+	font-size: 16px;
+	text-align: center;
+	color: #3d2e34;
+}
+
+.containerImageAddon {
+	border-radius: 10px;
+	border: 1px solid #d7d7d7;
+}
+
+#contentElinaPBE .termsBox {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+#confirmButtons {
+	height: 100%;
+}
+
+.nav-tabs > li > a {
+	color: #3d2e34;
+}
+
+#nav > ul > li > a {
+	padding: 15px 15px 17px 15px;
+}
+
+.nav-tabs > li > a {
+	text-decoration: none;
+	color: #544048;
+}
+
+.sitemap a {
+	color: #fff;
+}
+
+.fancybox-inner header, .fancybox-inner footer{
+display:none;}
+
+footer.sitemap {
+	clear: both;
+}
+		
+		#goToConfirm{
+		margin-top:20px;}
+		
+		
+		a.btn.small.uncheckall {
+    margin-bottom: 0px !important;
+}
+		
+		#ChooseAddsElinaPBE div.contentInside div.btn-group{
+		margin:5px;}
+		
+		#jumpBookFinalElinaPBE{
+		line-height: 1.5;}
+		
+		div#viewBox, div#editBox{
+		padding-bottom:20px;}
+
+.nav-tabs > li.selected > a, .nav-tabs > li.selected > a:hover, .nav-tabs > li.selected > a:focus {
+	color: #abc839;
+}
+
+ .pricesAndActions.totalPrice{
+display:none!important;}
+
+div.list_entry_addon {
+	border: 1px solid #cfc6ca;
+	    min-height: 340px;
+}
+
+div.availCalendar .ui-datepicker td, div.availCalendar .ui-datepicker th{
+padding:2px;}
+
+#NewFocusChoice h2 {
+	font-size: 28px;
+}
+
+div.finalDescription h3 {
+	margin-bottom: 0px;
+}
+
+#ChooseAddsElinaPBE div.contentInside div.AddOnsContainerElinaPBE div.list_entry_addon.closed p.priceAddon{
+bottom:65px;
+}
+
+#NewFocusChoice a.offerTxt {
+	text-decoration: underline;
+	margin: 0px;
+	text-align: left;
+	display: block;
+}
+
+#NewFocusChoice {
+	margin: 0;
+	width: 50%;
+}
+
+#NewFocusChoice {
+	margin: 0;
+	width: 45%;
+}
+
+#containerFinal div.pricesAndActions {
+	float: none;
+	margin-left: 0%;
+	width: 100%;
+	padding-top: 5px;
+}
+
+.finalBookingForm {
+	border: 1px solid #d7d7d7;
+	border-radius: 10px
+}
+
+table.form tr th, table.form tr td {
+	background-color: #f0f0f0;
+}
+
+.personalDetailsTitle, .paymentDetailsTitle, .specialRequestTitle {
+	font-size: 16px;
+	font-weight: 700;
+	color: #544048;
+}
+
+table.form tr th.subheading {
+	background: #fff;
+}
+
+div.disclaimer.finalCheckoutBar {
+	width: 100%;
+}
+
+div.disclaimer .pricesAndActions .descriptionPBE h5 {
+	font-size: 16px;
+	text-align: center;
+	color: #3d2e34;
+}
+
+.disclaimer div.pictureContainerElinaPBE {
+	margin-top: 10px;
+}
+
+.close .headBar {
+	opacity: 1;
+}
+
+.close.active .headbar {
+	opacity: 1;
+}
+
+.close:focus, .close:hover {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+	filter: alpha(opacity=50);
+	opacity: 1;
+}
+
+.close .headBar:hover {
+	opacity: 0.7;
+}
+
+.close .headBar:focus {
+	opacity: 0.9;
+}
+
+div.contentInside div.AddOnsContainerElinaPBE h3 {
+	color: #544048;
+	margin-bottom: 5px;
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bototm: 10px;
+	text-align: center;
+}
+
+#newMember h3, #alreadyRegistered h3 {
+	font-size: 18px;
+	color: #544048;
+}
+
+#viewBox h3, #editBox h3 {
+	font-size: 18px;
+	color: #6a686b;
+}
+
+.list_entry h3 {
+	font-size: 16px;
+}
+
+div#customBoxElinaPBE {
+	margin: 10px 0;
+	padding: 10px;
+	border: 1px solid #cfc6ca;
+	clear: both;
+	border-radius: 5px;
+	display: block;
+	position: relative;
+}
+
+div#customBoxElinaPBE h1 {
+	text-align: center;
+}
+
+div#customBoxElinaPBE p {
+	font-size: 14px;
+	font-family: ek mukta;
+}
+
+.priceAddon span {
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+
+#nav > ul > li {
+	font-weight: 300;
+}
+
+#discountTriggerPBE {
+	margin-top: 10px;
+	display: block;
+}
+
+a.offerTxt {
+	text-decoration: none;
+}
+
+div.headBar h2 {
+	font-size: 18px;
+	font-weight: 300;
+	color: #3d2e34;
+}
+
+div.availabileInstead {
+	background-color: #fff;
+}
+
+#ChooseAddsElinaPBE .contentInside {
+	background: #fff;
+}
+
+#reasonWhyNoAvail {
+	background: #fff;
+	border: none;
+	border-bottom: 1px solid #cfc6ca;
+	border-top: 1px solid #cfc6ca;
+}
+
+#reasonWhyNoAvail p {
+	color: #3d2e34;
+	font-size: 18px;
+	font-weight: normal;
+	font-family: arapey;
+}
+
+.closed div.addonDescriptionContainer {
+	max-height: 90px;
+	display: none;
+}
+
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 1em;
+	margin: 1px 0;
+	color: #000;
+}
+
+div.dailyPrice, div.discountedPrice {
+	margin: 5px 0 !important;
+}
+
+a#PromoCodeRefreshButton {
+	width: 95%;
+}
+
+#NewFocusChoice h3 {
+	font-size: 16px;
+	margin-bottom: 8px;
+	font-weight: normal;
+}
+
+div.finalDescription h3 span {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+div.disclaimer.finalCheckoutBar {
+	margin-top: 20px;
+	border: 1px solid #cfc6ca;
+	background: #fff;
+	border-radius: 5px;
+}
+
+div.disclaimer.finalCheckoutBar .cont img {
+	border-radius: 10px;
+}
+
+a.editButton {
+	font-weight: normal;
+	font-size: 14px;
+	font-family: ek mukta;
+}
+
+table.form tr th, table.form tr td {
+	font-family: ek mukta;
+}
+
+a.btn.availabilityCal {
+	line-height: 1em;
+	font-weight: normal;
+	padding: 4px 5px;
+}
+
+.addonStep.addonStep3 {
+	text-align: right;
+}
+
+#nav > ul > li > a {
+	white-space: nowrap !important;
+}
+
+#rowFocusBoxwhen p.small {
+	font-size: 14px;
+	color: #6f6f6f;
+	margin: 0;
+}
+
+#nav ul.internalMenu > li a {
+	white-space: nowrap;
+}
+
+div.dailyPrice, div.discountedPrice {
+	font-size: 16px;
+}
+
+.elinaField#loginElina{
+margin-top:30px;}
+
+
+
+/*div.loggedInElinaPBELogout a, span.loggedInElinaPBERole {
+    padding:7px 5px!important;
+  
+}*/
+
+
+div.loggedInElinaPBEServices > div{
+
+ padding:12px 5px!important;
+}
+
+
+.promo_title, .property_header, .property_title a, .Name_property a{
+
+font-size:21px!important;
+	font-family: "Arapey", Helvetica, sans-serif;
+}
+
+
+div.AddOnsContainerElinaPBE div.list_entry_addon.closed p.priceAddon{
+bottom:55px!important;
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 777px) {
+
+div#rowFocusChoice .pricesAndActions .descriptionPBE h5 {
+	text-align: left;
+}
+
+div.disclaimer 	.pricesAndActions .descriptionPBE h5 {
+	text-align: left;
+}
+
+#sidebarElinaPBE {
+	margin-top: 10px;
+}
+
+div.pricesAndActions {
+	width: 100%;
+}
+
+div#customBoxElinaPBE {
+	display: none;
+}
+
+div#contentElinaPBE {
+	width: 99%;
+	padding: 0;
+	margin: 0 auto;
+	float: left;
+}
+
+div#sidebarElinaPBE {
+	display: block;
+	float: none;
+	width: 99%;
+}
+
+div.actionsTools {
+	display: none;
+}
+
+div.pricesAndActions {
+	float: right;
+	display: block;
+	width: 98%;
+	text-align: center;
+	padding-top: 0px;
+	margin-right: 1%;
+}
+
+div.pictureContainerElinaPBE {
+	float: left;
+	width: 45%;
+}
+
+div.pictureContainerElinaPBE.promos {
+	margin: 0;
+	width: 98%;
+	padding: 0;
+}
+
+div.descriptionPBE {
+	float: left;
+	width: 49%;
+	margin-left: 1%;
+}
+
+div.descriptionPBE h2 {
+	font-size: 21px;
+}
+
+#afterThis div.list_entry div.pictureContainerElinaPBE {
+	display: none;
+}
+
+.ImagesContainer {
+	background-size: cover;
+}
+
+div#newMember {
+	float: none;
+	width: auto;
+	border-right: 0;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+#RegistredMemberForm p {
+	height: auto !important;
+}
+
+div#alreadyRegistered {
+	float: none;
+	width: auto;
+}
+
+#personalInfo tbody tr th {
+	width: 20%;
+}
+
+div.loginBoxPBE {
+	display: none;
+}
+
+div.row.sectionsBook.searchRow {
+	display: none;
+}
+
+div.fieldElina {
+	display: block;
+	float: none;
+	width: 98% !important;
+	margin: 5px 0;
+}
+
+div.availCalendar .ui-datepicker-multi-3 .ui-datepicker-group {
+	width: 90%;
+}
+
+div.legend {
+	width: 100%;
+}
+
+.availCalendar a.ui-corner-all {
+	width: 5% !important;
+}
+
+#availableCalendar div.dates {
+	width: 90%;
+}
+
+select#Guests {
+	width: 30%;
+}
+
+div#rowFocusChoice {
+	display: none !important;
+}
+
+.clm33 {
+	width: 100% !important;
+	float: none;
+	margin: 0 !important;
+}
+
+textarea.specialRequest {
+	width: 100%;
+}
+
+table.form select {
+	width: 100%;
+}
+
+table.form tr th {
+	width: auto;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+
+#contentElinaPBE div.descriptionPBE {
+	margin-left: 1%;
+	width: 98%;
+	margin-top: 10px;
+}
+
+.contentInside .pictureContainerElinaPBE {
+	width: 98%;
+}
+
+.btn {
+	padding: 5px 0;
+}
+
+.btn.btn-primary, .btn, .btn.small {
+	font-size: 14px;
+}
+
+}
+
+@media screen and (max-width: 766px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 480px) {
+
+a.btn.availabilityCal {
+	line-height: 1.5em;
+}
+
+div#top-nav-smaller-toggle {
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: -50px;
+}
+
+#top-nav-smaller-toggle div.buttonContainer {
+	height: 1.70em;
+}
+
+div#top-nav-smaller {
+	width: 60%;
+}
+
+div#top-nav-smaller li {
+	list-style: none;
+	border-bottom: 1px solid #fff;
+}
+
+div#top-nav-smaller li a {
+	font-size: 16px;
+}
+
+#NewFocusChoice {
+	margin: 0;
+	width: 100%;
+}
+
+#contentElinaPBE div.descriptionPBE {
+	margin-left: 1%;
+	width: 98%;
+	margin-top: 10px;
+}
+
+.contentInside .pictureContainerElinaPBE {
+	width: 98%;
+}
+
+select#SortOrder, select#Currency {
+	width: 30%;
+	float: right;
+}
+
+div#rowFocusChoice .pricesAndActions .descriptionPBE h5 {
+	text-align: left;
+}
+
+div.disclaimer 	.pricesAndActions .descriptionPBE h5 {
+	text-align: left;
+}
+
+div.pricesAndActions {
+	margin-left: 0%;
+}
+
+div.addonInfo.availCalendar div.calLegendAddons.clm33 {
+	float: none;
+}
+
+table.form tr th, table.form tr td {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+}
+
+#personalInfo tbody tr th {
+	width: 100%;
+}
+
+table.form select {
+	width: 100%;
+}
+
+.phone-code {
+	width: 40px !important;
+}
+
+#personalInfo tbody tr th {
+	width: 100%;
+	padding: 0 2%;
+}
+
+#add_guest.btn {
+	width: 100%;
+	line-height: 1.8;
+}
+
+#goToConfirm, #goToRegister {
+	width: 95%;
+}
+
+div.addonStep.addonStep3 table tr th, div.addonStep.addonStep3 table tr td {
+	display: block;
+}
+
+textarea {
+	display: block;
+	width: 200px;
+}
+
+div.addonStep.addonStep3 table tr th {
+	width: 50%;
+}
+
+div.addonStep.addonStep3 table tr th {
+	width: 50%;
+	float: left;
+	text-align: left;
+}
+
+div.list_entry_addon.open {
+	width: 100%;
+}
+
+.list_entry .pricesAndActions .offerTxt {
+	display: block;
+}
+    
+    .startBookingForm{
+    margin-top:35px;}
+    
+    
+    div#noAvail.errorBox .btn {
+    white-space: normal;
+        width:98%;
+        margin:1%;
+    }
+    
+div#noAvail.errorBox {
+text-align: center;
+width: 100%;
+margin: 0 auto ;
+}
+    
+div#viewBox, div#editBox {
+    margin-top:40px;}
+    
+div.addonInfo.availCalendar .clm33 {
+width: 100%;
+display: block;}
+
+div.addonInfo.availCalendar div.calLegendAddons.clm33 {
+margin-top: 30px;
+width: 98%;} 
+    
+div.promoRow{
+width:98%;}
+
+#reasonWhyNoAvail p {
+padding: 2% 1%;}
+    
+.splitPanel a.btn{
+    white-space:normal;
+    padding:5px 0;
+    height: 50px;}
+    
+    
+#availableCalendar div.dates{
+    top:5%!important;}
+    
+#availableCalendar div.dates p{
+margin:0px 0 0 0;}
+    
+.fancybox-skin{
+    padding:5px!important;
+}
+
+    div.disclaimer.finalCheckoutBar {
+margin-top: 40px;}
+
+}
+
+/*Navigation mobile*/
+@media screen and (max-width: 768px), screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+#headerElinaPBE, #loggedInElinaPBEBar{
+position:relative !important;
+width:100%;
+		
+}
+	
+#loggedInElinaPBEBar{
+	top: 20px !important;
+	position:relative;}
+	
+	
+	
+	.loggedOut div#PBELoginBoxMenu.menuLoginPanel {
+    top: 100%;
+}
+
+#contentElinaPBE div.mainGuestLounge {
+	width: 100% !important;
+	padding: 2% !important;
+top: 0;
+}
+.mainGuestLounge {
+padding-top: 10px !important;
+}
+
+label#label_active {
+	width: auto;
+	height: auto;
+	top: 155px;	
+}
+
+}
+
+
+#confirmFinalElinaPBE-alt {
+    width: 90%;
+    margin: 15px auto;
+}
+
+
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */

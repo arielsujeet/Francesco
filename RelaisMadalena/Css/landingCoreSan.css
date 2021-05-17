@@ -1,0 +1,782 @@
+body {
+    font-family: "Arapey",Helvetica,sans-serif;
+	 font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+	font-weight:400;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    vertical-align: middle;
+}
+
+.slider .slides .gallery_item.slide, .bx-wrapper .bxslide {
+    border-radius: 100%;
+}
+
+h1, h2, h3, h4 {
+ font-family: 'Spectral', serif;
+	font-weight:400;
+
+	
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+	
+
+
+}
+h1, h2, h3, h4{
+}
+
+p, li, a {
+font-size: 16px;
+font-weight:normal;}
+
+.reviewSlideerWrap .nav-tabs {
+    width: 100%;
+    min-width: 100%!important;
+}
+
+.bxslide{
+width:340px!important;}
+	
+	
+	
+	
+.info a .fa{
+color:#f9b419;
+}
+	
+.info a:hover {
+    background: #683817;
+}
+
+.San-Crispino .guest_login a {
+    background: #683817;
+}	
+		
+.San-Crispino .nav>li>a:focus, .San-Crispino .nav>li>a:hover {
+    background-color: #683817;
+    color: #f9b419;
+}
+
+		
+		.bx-wrapper {
+			margin-bottom: 0!important;
+	    background: #fdfaf4!important;
+
+   }
+
+.hotelItem .bx-wrapper {
+    margin-bottom: 0!important;
+    background: none!important;
+	-moz-box-shadow: nonec;
+    -webkit-box-shadow:none;
+    box-shadow: none;
+    border: none;
+	margin: 0 auto;
+}
+			
+.gridTable .bx-controls-direction{
+	display:none;}
+			.bx-wrapper .bx-next {
+    background: none;
+}
+
+.bx-wrapper .bx-prev {
+    background: none;
+}
+							
+.bx-controls-direction a:hover, .bx-controls-direction a:focus {
+	color: #fff;}
+								
+								
+.bx-wrapper .bx-next:after {
+  content: "\f105";
+    font-family: fontAwesome;
+    font-size: 34px;
+    text-indent: 10px;
+    display: table;
+    height: 10px;
+    overflow: hidden;
+    margin-top: -25px;
+								}
+								
+.bx-wrapper .bx-prev:after {
+  content: "\f104";
+    font-family: fontAwesome;
+    font-size: 34px;
+    text-indent: 10px;
+    display: table;
+    height: 10px;
+    overflow: hidden;
+    margin-top: -25px;
+								
+}
+								
+.San-Crispino .nav-tabs>li>a {
+    border-color: #683817;
+	color: #f4f3e7;
+	background-color: #683817;
+	position:relative;
+	overflow:hidden;
+	font-family: 'Spectral', serif;
+	    padding: 15px 25px;
+}
+
+.nav.nav-tabs>li {
+    margin: 0 10px;
+}
+
+.San-Crispino .nav-tabs>li>a:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    bottom: 0;
+    right: -20px;
+    background: url(/media/2797/swishicon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.navbar {
+
+	margin-bottom: 40px;}
+
+.close {
+    position: relative;
+    z-index: 99999;
+    padding: 10px;
+}
+			
+.San-Crispino .form-group button, .San-Crispino .finalLink {
+    color: #fff;
+    background: #683817;
+    background: -moz-linear-gradient(top,#683817 0,#683817 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#683817),color-stop(100%,#683817));
+    background: -webkit-linear-gradient(top,#683817 0,#93bb3c 100%);
+    background: -o-linear-gradient(top,#683817 0,#683817 100%);
+    background: -ms-linear-gradient(top,#683817 0,#683817 100%);
+    background: linear-gradient(to bottom,#683817 0,#683817 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#683817',endColorstr='#683817',GradientType=0 );
+	 border: 1px solid #683817;
+}
+					
+.San-Crispino #bookingFormContainer:after{
+			background:none;}
+								
+								
+.San-Crispino #bookingFormContainer{
+		background:#f5f0e6;}
+										
+.San-Crispino #HotelAmenities:after {
+		background: none;
+
+   }
+
+
+
+.San-Crispino #HotelAmenities {
+    background: #f4f3e7;
+}
+
+#hotelAmenities li {
+    list-style: none;
+    line-height: 2em;
+    border-radius: 100%;
+}
+
+header .container::before{
+background:none;}
+
+#hotelAmenities .logoImage img {
+	width: 82px;}
+		
+.San-Crispino .hotelType li:nth-child(2) .hotelItem, .San-Crispino .hotelItem {
+	background:none;}
+										
+.San-Crispino .list_item.property.hasGallery.gallery-loaded{
+	border-radius: 100%;
+    width: 340px!important;
+	height: 340px!important;
+    overflow: hidden;
+    margin: 0 auto;							
+	}
+								
+								
+.San-Crispino .hoteldescriptionType p, .San-Crispino .hoteldescriptionType li, .San-Crispino .hoteldescriptionType {
+    color: #111111;
+}
+
+.San-Crispino .hoteldescriptionType {
+    padding: 20px 10px;}
+		
+.San-Crispino .amenitiesGeneralList .item .hotelItem {
+	border-bottom: none;
+    margin: 0 0px;}
+				
+				
+.San-Crispino #hotelAmenities .flex-direction-nav a:before {
+    color:#683817;
+}
+							
+.San-Crispino .logoImage{
+	text-align:center;	
+			}
+
+.logoImage h2{
+	color:#683817;	
+			}
+				
+.San-Crispino .slider .flex-direction-nav .flex-prev {
+    left: 70px;
+}
+
+.San-Crispino .slider .flex-direction-nav .flex-next {
+    right: 70px;
+}
+
+.info a:before {
+    content: '';
+}
+
+.umb-grid > .grid-section > div {
+    padding: 0px 0;
+}
+
+#headerSection h1 {
+	    font-size: 38px;
+
+    color: #3d2e34;
+}
+
+.modal-content {
+			background-color: #fdfaf4;}
+
+
+.nav-tabs>li>a{
+font-size:19px;
+border-radius: 100%;}
+
+.pageHeaderLogo img {
+    width: 250px;
+}
+	
+.dark_gradient {
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(-45deg, rgba(0,0,0,0.3) 0%,rgba(255,255,255,0.52) 48%,rgba(255,255,255,0.37) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(0,0,0,0.3) 0%,rgba(255,255,255,0.52) 48%,rgba(255,255,255,0.37) 100%);
+    background: linear-gradient(135deg, rgba(0,0,0,0.3) 0%,rgba(255,255,255,0.52) 48%,rgba(255,255,255,0.37) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a65b3a4b', endColorstr='#5e68a7aa',GradientType=1 );
+}
+
+/*#spotlightPictureGallery.flexslider li.slide {
+    min-height: 100vh;
+}*/
+
+#GoogleMapArea .umb-grid .container{
+width:100%;}
+
+footer.sitemap {
+    background: #683817;
+}
+
+#GoogleMapArea .umb-grid > .grid-section > div {
+    padding: 0px 0;
+}
+
+#HotelAmenities:after {
+	content: none;}
+
+
+#GoogleMapArea .umb-grid{
+padding-top:30px;}
+
+#GoogleMapArea{
+/*background: rgba(245,240,230,0.4);
+	background: rgba(249,180,25,0.4);*/
+    overflow:hidden;
+padding:50px 0;}
+
+.GoogleMapAreaContainer{
+    overflow: hidden;
+    /*background: #fdfaf4;*/
+	text-align:center;
+}
+
+.socialSan{
+text-align:center;}
+
+/*#GoogleMapArea .gridLocationInfo *{
+color:#fff!important}*/
+
+#offerSlider.flexslider {
+    background: rgba(245,240,230,0.5);
+    border: 1px solid #683817;
+	padding: 15px 25px 10px 25px;
+	height:140px;
+}
+#spotlightPictureContainer ul.slides li{
+overflow: auto;
+height: 100px;}
+
+
+#spotlightPictureContainer ul.slides li::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(104,56,23,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#spotlightPictureContainer ul.slides li::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #F5F5F5;
+}
+
+#spotlightPictureContainer ul.slides li::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(104,56,23,.3);
+	background-color: #683817;
+}
+
+
+#offerSlider.flexslider .desc-slider h2 {
+    color: #3d2e34;
+}
+
+.promoDescription p {
+    color: #683817;
+}
+
+.info{
+list-style:none;}
+
+.info a:before {
+    color: #f9b419;
+}
+
+.info a {
+    padding: 0 10px;
+    color: #544048;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+    padding:10px 8px;
+}
+
+#Services:before, #HotelAmenities:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    z-index: 0;
+    top: 0;
+    background: -moz-linear-gradient(top, rgba(245,240,230,0.5) 0%, rgba(245,240,230,0.5) 1%, rgba(245,240,230,0.98) 41%, rgba(245,240,230,0.75) 63%, rgba(245,240,230,0.37) 100%);
+    background: -webkit-linear-gradient(top, rgba(245,240,230,0.5) 0%,rgba(245,240,230,0.5) 1%,rgba(245,240,230,0.98) 41%,rgba(245,240,230,0.75) 63%,rgba(245,240,230,0.37) 100%);
+    background: linear-gradient(to bottom, rgba(245,240,230,0.5) 0%,rgba(245,240,230,0.5) 1%,rgba(245,240,230,0.98) 41%,rgba(245,240,230,0.75) 63%,rgba(245,240,230,0.37) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0e3da', endColorstr='#5e68a7aa',GradientType=0 );
+}
+
+#HotelAmenities:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    z-index: 0;
+    top: 0;
+    background: -moz-linear-gradient(top, rgba(245,240,230,0.9) 0%, rgba(245,240,230,0.9) 1%, rgba(245,240,230,0.98) 41%, rgba(245,240,230,0.9) 63%, rgba(245,240,230,0.75) 100%);
+    background: -webkit-linear-gradient(top, rgba(245,240,230,0.9) 0%,rgba(245,240,230,0.9) 1%,rgba(245,240,230,0.98) 41%,rgba(245,240,230,0.9) 63%,rgba(245,240,230,0.75) 100%);
+    background: linear-gradient(to bottom, rgba(245,240,230,0.9) 0%,rgba(245,240,230,0.9) 1%,rgba(245,240,230,0.98) 41%,rgba(245,240,230,0.9) 63%,rgba(245,240,230,0.75) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0e3da', endColorstr='#5e68a7aa',GradientType=0 );}
+
+/*#HotelAmenities:before{
+
+ content: "";
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    z-index: 0;
+    top: 0;
+    background: -moz-linear-gradient(top, rgba(245,240,230,1) 0%, rgba(245,240,230,1) 1%, rgba(245,240,230,0.98) 41%, rgba(245,240,230,0.9) 63%, rgba(245,240,230,0.8) 100%);
+    background: -webkit-linear-gradient(top, rgba(245,240,230,1) 0%,rgba(245,240,230,1) 1%,rgba(245,240,230,0.98) 41%,rgba(245,240,230,0.9) 63%,rgba(245,240,230,0.8) 100%);
+    background: linear-gradient(to bottom, rgba(245,240,230,1) 0%,rgba(245,240,230,1) 1%,rgba(245,240,230,0.98) 41%,rgba(245,240,230,0.9) 63%,rgba(245,240,230,0.8) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0e3da', endColorstr='#5e68a7aa',GradientType=0 );
+}*/
+
+#hotelAmenities {
+    position: relative;
+    z-index: 3;
+    border-bottom: 15px solid rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 9;
+    margin-bottom: 0px;
+}
+
+
+
+#Services, #Promotions {
+    padding: 100px 0;
+}
+
+
+.hoteldescriptionType {
+    font-size: 18px;
+
+}
+
+.gridLocationInfo {
+    padding-top: 50px;
+    padding: 80px 20px 0 20px;
+    
+}
+
+.gridLocationInfo h3{
+padding-bottom:20px;}
+
+#ContactUsLocation .gridLocationInfo {
+background: #f4f3e7;
+    min-height: 600px;
+}
+
+.grid-section li{
+ list-style-position: inside;
+
+}
+
+.grid-section ul{
+text-align:center;
+}
+
+
+.titleDescription{
+  background:#f9b419;
+min-height: 370px;
+}
+
+.modal-content .gridLocationInfo {
+    padding:0px 20px 0 20px;
+}
+
+#myModal .gridLocationInfo {
+    padding:50px 20px 0 20px;
+	text-align: center;
+}
+
+.umb-grid blockquote {
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    font-style: italic;
+}
+
+.modal-content .container{
+width:100%;}
+
+.modal-content {
+    width: 80%;
+    overflow: hidden;
+    /* margin: 0 auto; */
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.modal-content h2, .modal-content .contactDetails {
+text-align:center;}
+
+.gridTable {
+    padding: 40px 0;
+    text-align: center;
+    background: #fdfaf4;
+    position: relative;
+    border-bottom: 15px solid rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0px;
+}
+
+#bxsliderTable.gridTable {
+background: #f9b419;}
+
+#bxsliderTable.gridTable:before, #bxsliderTable.gridTable #aptDetails:after{
+background:none;}
+
+
+#bxsliderTable.gridTable .rowType {
+    background: none;
+    border: 1px solid transparent;
+}
+
+#bxsliderTable.gridTable h2 {
+    font-size: 38px;
+    padding: 10px;
+    color: #fff;
+}
+
+#bxsliderTable.gridTable .rowDescription {
+    color: #fff;
+    padding: 5px 10px 10px 10px;
+}
+
+.gridTable:before{
+content:"";
+position:absolute;
+background:	url('/media/2795/decor.png');
+top:0;
+left:0;
+width:100%;
+height:100px;}	
+
+
+#Promotions:before {
+    content: "";
+    position: absolute;
+    background: url(/media/2795/decor.png);
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+
+/*#Promotions:after {
+    content: "";
+    position: absolute;
+    background: url(/media/2842/decorturn.png);
+	background-repeat:no-repeat;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    height: 100px;
+}
+*/
+
+
+#aptDetails:after{
+content:"";
+position:absolute;
+background:	url('/media/2795/decor.png');
+bottom:0;
+left:0;
+width:100%;
+height:100px;}
+
+	
+.gridTable h2 {
+    font-size: 34px;
+    padding: 10px;
+    padding-top: 30px;
+    color: #fff;
+    border-bottom: none;
+}
+
+
+.rowName{
+position:relative;}
+
+.rowPrice{
+background: #fff;
+    width: 60%;
+    padding: 0px 20px;
+    /* border-radius: 100%; */
+    position: relative;
+    margin: 0 auto;
+    margin-top: 0px;
+    color: #b28e5b;
+    font-size: 21px;
+    z-index: 2;
+    border: 1px solid #b28e5b;
+    border-radius: 5px;
+	font-family: 'Spectral', serif;
+}
+
+.rowType .slide{
+height:465px;
+overflow:hidden;
+border:none;}
+	
+
+.rowType .flexslider {
+    margin: 50px 0 0 0 ;
+    background: none;
+    border: none;
+    position: relative;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0;
+    -moz-box-shadow:0;
+    -o-box-shadow:00);
+    box-shadow:0;
+    zoom: 1;
+}
+.rowWeight {
+    background: none;
+    font-size: 21px;
+    color: #b28e5b;
+    font-weight: bold;
+    font-family: 'Spectral', serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #b28e5b;
+    border-bottom: 1px solid #b28e5b;
+    margin-top: 10px;
+    position: relative;
+    z-index: 9;
+    /* width: 80%; */
+    margin: 10px auto;
+}
+
+.slideImage{
+    background: #fdfaf4;
+	width:100%;
+    border: 4px solid #fff;
+	 border-radius: 4px;
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+    -o-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+    box-shadow: 0 1px 4px rgba(0,0,0,.2);
+    zoom: 1;
+}
+.currency{
+font-size:24px;}
+
+.rowDescription{
+color:#fff;
+padding:5px 10px 10px 10px;}
+
+.amount{
+font-size:28px;
+font-weight:bold;}
+
+.rowType {
+    overflow: hidden;
+    background: rgba(255,255,255,0.5);
+	background:none;
+    /* border-top: 10px solid #800000; */
+    position: relative;
+    z-index: 1;
+    padding-top: 15px;
+    padding: 0px;
+   
+}
+
+#aptDetails{    
+	overflow: hidden;
+position:relative;}
+
+.logoImage {
+    padding: 20px 0px;
+}
+
+#hotelAmenities .logoImage {
+    padding: 10px 0px;
+}
+
+#ContactUsLocation{
+background-attachment: fixed;
+}
+
+
+.contactDetails{
+padding-top:20px;}
+
+.contactDetails .fa{
+color:#f9b419;}
+
+.contactInformation h2{
+margin-bottom:20px;}
+
+.socialSan li{
+list-style:none;
+display:inline;}
+
+.socialSan li a {
+    font-size: 34px;
+    padding: 20px;
+    color: #683817;
+}
+.gridTable li{
+
+background-position:center center;}
+
+.gelatoDetails{
+/*position:absolute;
+	top:350px;*/
+	margin-top:-30px;
+	width:100%;
+}
+
+@media screen and (max-width: 1200px){
+
+.gridTable h2 {
+			font-size: 24px;}
+	
+	}
+
+@media screen and (max-width: 902px){
+#hotelAmenities li, .gridTable li{
+    margin: 0 auto;
+    display: table;
+}
+		
+		
+}
+
+@media screen and (max-width: 766px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 480px){
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+			
+.navbar-default .navbar-toggle {
+    border-color: #683817;
+    background: #683817;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+#hotelAmenities li {
+    margin: 0 auto;
+    display: table;
+}
+	.gridLocationInfo {
+    padding: 80px 20px 40px 20px;
+}
+
+	.viewText{
+	padding: 15px;
+    text-align: center;}
+
+	.viewImage{
+	display:none;}
+	
+	.nav.nav-tabs {
+    border-left: none;
+}
+	
+	.nav.nav-tabs>li {
+    width: 50%;
+    border-bottom: none;
+    border-right: none;
+}
+	
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+}
+
+}
+
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */

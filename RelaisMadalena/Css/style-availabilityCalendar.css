@@ -1,0 +1,402 @@
+/*Availability calendar additions*/
+
+.availCalendarElina .ui-datepicker-inline {
+    border: none;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 10px;
+    background: none;
+    padding: 0 3%;
+}
+
+.availCalendarElina a.ui-datepicker-next.ui-corner-all {
+    right: 0px;
+    height: 100%;
+    width: 3%;
+    background-color: #992068;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.availCalendarElina a.ui-datepicker-prev.ui-corner-all {
+    left: 0;
+    height: 100%;
+    width: 3%;
+    background-color: #992068;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.availCalendarElina .ui-datepicker .ui-datepicker-title, .availCalendarElina .ui-widget-header {
+    font-size: 18px;
+    color: #a0a0a0;
+    margin: 0;
+    line-height: inherit;
+    text-align: center;
+    border: none;
+    background: inherit;
+    font-weight: bold;
+    position: inherit;
+}
+
+.availCalendarElina div.ui-datepicker-title {
+	font-family: "Open Sans", Arial, Geneva, sans-serif;
+}
+
+a.btn-cancel.calendar-cancel {
+display: inline-block;	
+margin-left: 10px;
+}
+
+
+
+.availCalendarElina .ui-widget {
+    font-family: inherit;
+    width: auto !important;
+}
+
+.availCalendarElina .ui-datepicker .ui-datepicker-month {
+    color: #666;
+}
+
+.availCalendarElina .ui-datepicker th {
+    font-size: 14px;
+    padding: 5px;
+    border-top: 1px solid #c9c9c9;
+    border-bottom: 1px solid #c9c9c9;
+    color: #8c8c8c;
+}
+
+.availCalendarElina .ui-datepicker-group {
+    margin: 0px;
+}
+
+.availCalendarElina .ui-datepicker table {
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+.availCalendarElina .ui-datepicker-multi-3 .ui-datepicker-group {
+    width: 30%;
+    margin-right: 1%;
+}
+
+.availCalendarElina .ui-datepicker td {
+    padding: 5px;
+    border-bottom: 1px solid #fff;
+    color: #2f2f2f;
+    text-align: center;
+    font-size: 12px;
+}
+
+.availCalendarElina .ui-datepicker-unselectable {
+    opacity: 0.5;
+}
+
+.availCalendarElina .ui-state-default, .availCalendarElina .ui-widget-content .ui-state-default {
+    border: none;
+    background: transparent;
+    font-weight: inherit;
+    color: inherit;
+}
+
+.availCalendarElina .ui-datepicker td span, .availCalendarElina .ui-datepicker td a {
+    padding: 0;
+    text-align: inherit;
+}
+
+.availCalendarElina .ui-state-disabled {
+    opacity: inherit;
+}
+
+
+.availCalendarElina.moreBox > h2 {
+    display: inline-block;
+}
+
+
+
+.availCalendarElina .available {
+    background: greenyellow;
+}
+
+.availCalendarElina .available > span {
+        background: greenyellow !important;
+   }
+
+.availCalendarElina .inuse {
+    background: #f32a00;
+}
+
+.availCalendarElina .inuse > span {
+        background: #f32a00 !important;
+    }
+
+.availCalendarElina	.calendar-available {
+	    background-color: #bdde8e;
+	}
+
+.availCalendarElina	.calendar-unavailable {
+	    background-color: #c0c0c0;
+	}
+.availCalendarElina	td.calendar-selection-middle, .availCalendarElina span.calendar-selection-middle.td,
+	.availCalendarElina td.calendar-selected-middle, .availCalendarElina span.calendar-selected-middle.td {
+	    background: #f58745 !important;
+	}
+
+.availCalendarElina	td.calendar-empty.calendar-selection-middle {
+	    background: none;
+	}
+
+.availCalendarElina	table.ui-datepicker-calendar td.calendar-available {
+	    cursor: pointer;
+	    color: #465332;
+	}
+
+.availCalendarElina	table.ui-datepicker-calendar td.calendar-unavailable {
+	    color: #6d6d6d;
+	}
+	
+.availCalendarElina	table.ui-datepicker-calendar td.calendar-unavailable.calendar-previous-unavailable.calendar-next-unavailable {
+	background-color: #c0c0c0;
+	opacity: 1 !important;
+}	
+
+.availCalendarElina	td.calendar-available.calendar-previous-unavailable {
+	    background: #bdde8e url(/img/calendarico/unavailable-end.png) no-repeat center center;
+	}
+.availCalendarElina	td.calendar-available:hover {
+	    background: #bdde8e url(/img/calendarico/available-start.png) no-repeat center center;
+	}
+
+.availCalendarElina td.calendar-cell.calendar-available.calendar-previous-unavailable.calendar-next-unavailable {
+	  background: #bdde8e url(/img/calendarico/unavailable-end.png) no-repeat center center;
+}
+	
+.availCalendarElina td.calendar-cell.calendar-available.calendar-previous-unavailable.calendar-next-unavailable:hover,  {
+		    background: #c0c0c0 url(/img/calendarico/available-start.png) no-repeat center center;
+}
+
+.availCalendarElina	td.calendar-available.calendar-selection-end:hover {
+	    background: #bdde8e url(/img/calendarico/available-end.png) no-repeat center center;
+	}
+
+.availCalendarElina	td.calendar-available.calendar-previous-unavailable:hover {
+	    background: #c0c0c0 url(/img/calendarico/available-start.png) no-repeat center center;
+	}
+
+.availCalendarElina	td.calendar-available.calendar-previous-unavailable.calendar-selection-start, .availCalendarElina td.calendar-available.calendar-previous-blocked.calendar-selection-start,
+.availCalendarElina	td.calendar-available.calendar-previous-unavailable.calendar-selected-start, .availCalendarElina td.calendar-available.calendar-previous-blocked.calendar-selected-start {
+	    background: #c0c0c0 url(/img/calendarico/available-start.png) no-repeat center center;
+	}
+
+.availCalendarElina	td.calendar-available.calendar-next-unavailable {
+	    background: #bdde8e url(/img/calendarico/unavailable-start.png) no-repeat center center;
+	}
+
+.availCalendarElina td.calendar-available.calendar-next-unavailable:hover, 	.availCalendarElina td.calendar-unavailable.calendar-next-unavailable.calendar-previous-available:hover,
+.availCalendarElina	td.calendar-unavailable.calendar-previous-available.calendar-selected-end,
+.availCalendarElina	td.calendar-unavailable.calendar-next-unavailable.calendar-previous-available.calendar-selection-end-confirm {
+	        background: #f58745 url(/img/calendarico/unavailable-start.png) no-repeat center center;
+	    }
+
+.availCalendarElina td.calendar-available.calendar-previous-available.calendar-selection-start,
+.availCalendarElina	td.calendar-available.calendar-previous-available.calendar-selected-start {
+	    background: #bdde8e url(/img/calendarico/available-start.png) no-repeat center center;
+	}
+
+.availCalendarElina td.calendar-available.calendar-previous-available.calendar-selection-end-confirm,
+.availCalendarElina td.calendar-available.calendar-previous-available.calendar-selected-end {
+	    background: #bdde8e url(/img/calendarico/available-end.png) no-repeat center center;
+	}
+
+
+.availCalendarElina	.cal .ui-datepicker-current-day .ui-state-active a, .availCalendarElina .cal .ui-datepicker-today a {
+	    border: 1px solid #d3d3d3;
+	    background: #e6e6e6;
+	    color: #555;
+	}
+
+div.calendarLoading {
+	    color: #b5b5b5;
+	    font: 28px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	    display: block;
+	    text-align: center;
+	    margin: 20px;
+	    text-indent: -999999px;
+	    background-image: url(/img/calendarIco/ajax-loader-2.gif);
+	    background-position: center;
+	    background-repeat: no-repeat;
+	}
+	
+.availCalendarElina	td.ui-datepicker-unselectable.ui-state-disabled.calendar-empty {
+	    background: url(/img/calendarico/ajax-loader.gif) no-repeat right center;
+	    color: #a3a3a3;
+	    text-align: center;
+	}
+	
+#availableCalendar, .popup {
+	display: none;
+	position: fixed;
+	z-index: 9999999;
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+#availableCalendar div.dates, .internalPopup {
+	position: absolute;
+	top: 25%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 500px;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,0.51) 0 0 10px;
+}
+
+.calendarPlaceholder.availCalendarElina.internalPopup {
+	background-color: #fff;
+}
+
+#availableCalendar div.dates span {
+	font-weight: bold;
+	margin-left: 5px;
+	color: #696969;
+}
+
+
+div.legend {
+    color: #656565;
+    float: left;
+    width: 50%;
+	font: 12px "Open Sans", Arial, Geneva, sans-serif;
+}
+
+div.promoRow.row {
+    float: left;
+    width: 50%;
+    margin-right: 1%;
+}
+
+div.legend .row {
+    border-bottom: 1px dotted #d2d2d2;
+    padding-bottom: 5px;
+    }
+
+span.small {
+    display: block;
+    font-size: 10px;
+    color: #a7a7a7;
+}
+
+span.minLenghtStay {
+    display: block;
+    color: #f58745;
+}
+
+span.td {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border: 1px solid #dadada;
+    margin-right: 5px;
+}
+
+span.addon {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+}
+
+.calendar-available {
+    background-color: #bdde8e;
+}
+
+
+.calendar-unavailable {
+    background-color: #c0c0c0;
+}
+
+a#discountTriggerPBEpopup {
+ float: right;
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+
+.btn-primary {
+ width: 95%;
+clear: both;
+text-align: center;
+ display: block;
+ 
+}
+
+
+#availableCalendar div.dates {
+        position: absolute;
+        width: 500px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 20%;
+        padding: 2%;
+ background: #fff;
+}
+
+#availableCalendar div.dates ul {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+a.calendar-cancel {
+    float: right;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+#availableCalendar div.dates p {
+    color: #929292;
+}
+
+#availableCalendar div.dates p.warning {
+  font-weight: bold;
+  color: #ff2600;
+}
+
+#availableCalendar div.dates p span {
+     color: #505050;
+     margin-left: 5px;
+     font-weight: bold;
+}
+
+#availableCalendar div.dates span.fees {
+display: none;
+}
+
+.calendar-cancel {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+   text-decoration: underline;
+    font-size: 12px;
+  	font-family: "Open Sans", Arial, Geneva, sans-serif;
+cursor: pointer;  
+}
+
+
+.availCalendarElina td.calendar-available.calendar-next-unavailable,
+.availCalendarElina td.calendar-unavailable.calendar-next-unavailable.calendar-previous-available
+{	
+	background: #bdde8e url(/img/calendarico/unavailable-start.png) no-repeat center center;
+}
+
+.availCalendarElina td.calendar-unavailable.ui-datepicker-unselectable
+{
+	opacity: 1;
+}
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */

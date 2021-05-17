@@ -1,0 +1,724 @@
+/*
+Theme Name: Relais Maddalena - smaller screens
+Author: Matteo Di Mauro and Patricia Esterre - Vestibule Marketing
+Version: 1.0
+*/
+
+div#top-nav-smaller-toggle, div#top-nav-smaller {
+	display: none;
+}
+
+.dropDownIcon {
+    display: none;
+}
+
+/*@media (min-width: 768px){
+.container {
+  width: 100%!important;
+}
+}*/
+
+@media only screen and (min-width: 959px) and (max-width: 991px) {
+
+
+
+.RoomPage #header_section, .RoomPage .pagetitle_container {
+	bottom: 400px;
+}
+
+.internalitemBlock {
+	height: 180px;
+}
+
+.internalItemLink {
+	left: 20px;
+}
+
+.internalItemLink:after {
+	margin-left: 0%;
+}
+
+.fresh_desk {
+	margin-top: 20px;
+}
+
+#holder-init {
+	padding: 10px 0;
+}
+
+div.details {
+	position: relative;
+	margin-top: 20px;
+}
+
+.internalItemTitle {
+	padding-top: 15px;
+}
+
+.map_location {
+	padding: 0;
+}
+
+.bubble {
+	top: 5px;
+}
+
+.description {
+	height: 100%;
+	margin-bottom: 20px;
+}
+
+
+
+}
+
+
+/* Smaller than standard 960 (devices and browsers) */
+
+@media only screen and (max-width: 958px) {
+	
+	.noCarousel.forceBooking #bookingFormContainer {
+	display: none;
+}
+	
+	header .container:before {
+	display:none;
+	}
+.top-bar {
+	margin-right: 15px !important;
+}
+
+
+.fresh_desk {
+	margin-top: 20px;
+}
+
+.bubble {
+	top: 0px;
+}
+
+#bookingFormContainer_wide .fieldElina.bookPeopleElina, #bookingFormContainer_wide .fieldElina.bookCheckOutElina, #bookingFormContainer_wide .fieldElina.bookCheckInElina {
+	display: none;
+}
+
+#bookingFormContainer_wide * {
+	text-align: center;
+}
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+ul.languages {
+	float: left;
+}
+
+.bubble {
+	top: -210px;
+	right: 25px;
+}
+
+.internalitemBlock {
+	height: 180px;
+}
+
+.internalItemLink {
+	left: 20px;
+}
+
+.internalItemLink:after {
+	margin-left: 0%;
+}
+
+.fresh_desk {
+	margin-top: 20px;
+}
+
+#holder-init {
+	padding: 10px 0;
+}
+
+div.details {
+	position: relative;
+	margin-top: 20px;
+}
+
+.internalItemTitle {
+	padding-top: 15px;
+}
+
+.map_location {
+	padding: 0;
+}
+
+.description {
+	height: 220px;
+	height: 100%;
+	margin-bottom: 20px;
+}
+
+.RoomPage #header_section, .RoomPage .pagetitle_container {
+	bottom: 400px;
+}
+
+
+}
+
+.page_title {
+	font-size: 48px;
+}
+
+/* All Mobile Sizes (devices and browser) */
+
+@media only screen and (max-width: 767px) {
+
+.logo_brand:after {
+	display: none;
+				
+}
+			
+div#top-nav-smaller-toggle{
+	right: 15px;}
+			
+			
+.menuMobile{
+	padding-left:0;
+	padding-right:0;}
+
+.top-bar {
+	margin-right: 0px !important;
+	position:relative;
+	float:none!important;
+}
+
+.bubble {
+	top: -210px;
+	right: 25px;
+}
+
+.fresh_desk {
+	margin-top: 20px;
+}
+
+.top-bar {
+	width: 100%;
+}
+
+.guest_login, .info {
+	width: 50%;
+	text-align: center;
+}
+
+#holder-init {
+	padding: 10px 0;
+}
+
+div.details {
+	position: relative;
+	margin-top: 20px;
+}
+
+.internalItemTitle {
+	padding-top: 15px;
+}
+
+.map_location {
+	padding: 0;
+}
+
+.description {
+	height: 100%;
+	margin-bottom: 20px;
+}
+
+.dropDownIcon {
+		display: block;
+	}
+
+.dropDownIcon {
+	position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 18px;
+    padding: 8px 24px;
+    background: #544048;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1px;
+	}
+
+#top-nav-smaller li:hover .internalMenu {
+    display: none;
+}
+
+#nav ul.internalMenu{
+position:relative;
+display: none;}
+
+#nav ul li ul.internalMenu  li{
+    opacity: 1;
+	height: auto;
+	padding:0;
+	transition:initial;
+	
+}
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+.bubble {
+	top: -210px;
+	right: 25px;
+}
+
+.top-bar {
+	position: relative;
+	top: 0;
+	box-shadow: 20px 1px 6px rgba(0,0,0,.4);
+	z-index: 60;
+}
+
+.logo_brand {
+	top: 0;
+}
+
+.fresh_desk {
+	margin: 0px;
+}
+
+.page_title {
+	display: none;
+}
+
+.sitemap {
+	display: none;
+}
+
+#carousel3 .flex-direction-nav .flex-prev {
+	margin-left: 18px;
+}
+
+#carousel3 .flex-direction-nav .flex-next {
+	margin-right: 18px;
+}
+
+#holder-init {
+	padding: 10px 0;
+}
+
+div.details {
+	position: relative;
+	margin-top: 20px;
+}
+
+.internalItemTitle {
+	padding-top: 15px;
+}
+
+.map_location {
+	padding: 0;
+}
+
+.description {
+	height: 100%;
+	margin-bottom: 20px;
+}
+
+.RoomPage #header_section, .RoomPage .pagetitle_container {
+	bottom: 400px;
+}
+
+#carousel3.flexslider {
+	width: 100%;
+}
+
+}
+
+
+@media screen and (max-width: 766px), screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+
+ul.menu_left, ul.menu_right {
+	display: none;
+}
+
+div#top-nav-smaller {
+	position: absolute;
+	width: 100%;
+	left: auto;
+	right: 0;
+	margin: 0 auto;
+	z-index: 100;
+	background: #fff;
+	text-align: center;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	opacity: 0;
+	top: -300px;
+	display: block;
+}
+
+div#top-nav-smaller.activated {
+	top: 100%;
+	opacity: 1;
+	/*top: 25px;*/
+}
+
+#top-nav-smaller-toggle >  div {
+	padding: 0;
+	width: 30px;
+	height: 20px;
+	cursor: pointer;
+	margin: 0 auto;
+	vertical-align: middle;
+	margin-top: 10px;
+}
+
+#top-nav-smaller-toggle span.text {
+	display: none;
+}
+
+#top-nav-smaller-toggle span.bar {
+	display: block;
+	height: 3px;
+	background: #fff;
+	clear: both;
+	margin-bottom: 5px;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	-webkit-transform-origin: 50%;
+	-moz-transform-origin: 50%;
+	-ms-transform-origin: 50%;
+	-o-transform-origin: 50%;
+	transform-origin: 50%;
+}
+
+#top-nav-smaller-toggle div.buttonContainer {
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	overflow: hidden;
+	display: block;
+	height: 16px;
+	height: 1.25em;
+}
+
+#top-nav-smaller-toggle.closed div.buttonContainer {
+	border-radius: 100%;
+	opacity: 0.3;
+}
+
+#top-nav-smaller-toggle.closed span.bar.first {
+	-webkit-transform: translateY(0.4rem) rotate(45deg);
+	-moz-transform: translateY(0.4rem) rotate(45deg);
+	-ms-transform: translateY(0.4rem) rotate(45deg);
+	-o-transform: translateY(0.4rem) rotate(45deg);
+	transform: translateY(0.4rem) rotate(45deg);
+}
+
+#top-nav-smaller-toggle.closed span.bar.second {
+	opacity: 0;
+}
+
+#top-nav-smaller-toggle.closed span.bar.third {
+	-webkit-transform: translateY(-0.4rem) rotate(-45deg);
+	-moz-transform: translateY(-0.4rem) rotate(-45deg);
+	-ms-transform: translateY(-0.4rem) rotate(-45deg);
+	-o-transform: translateY(-0.4rem) rotate(-45deg);
+	transform: translateY(-0.4rem) rotate(-45deg);
+}
+
+div#top-nav-smaller li {
+	list-style: none;
+	border-bottom: 1px solid #fff;
+	padding: 0.5em 0;
+	position:relative;
+}
+
+div#top-nav-smaller li a {
+	color: #544048;
+}
+
+div#top-nav-smaller li a:hover {
+	color: #6a686b;
+	/*background: #fff;*/
+	opacity: 1;
+}
+
+#top-nav-smaller ul {
+	margin-bottom: 0;
+}
+
+div#top-nav-smaller-toggle {
+	display: block;
+	position: absolute;
+	top: -50px;
+	z-index:999;
+						
+}
+					
+.dropDownIcon .fa{
+		width:10px;}
+
+}
+
+@media screen and (max-width: 480px) {
+
+#top-nav-smaller-toggle span.bar {
+	display: block;
+	height: 3px;
+	background: #fff;
+	clear: both;
+	margin-bottom: 5px;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	-webkit-transform-origin: 50%;
+	-moz-transform-origin: 50%;
+	-ms-transform-origin: 50%;
+	-o-transform-origin: 50%;
+}
+
+.page_title {
+	display: none;
+}
+
+.noCarousel .page_title {
+	display: block;
+}
+
+.brand {
+	background: #3d2e34;
+}
+
+#carousel.carousel {
+	z-index: 0;
+	margin-top: 0px;
+}
+
+.carousel-inner {
+	height: 100%;
+}
+
+#header_section {
+	margin-top: 0px;
+}
+
+.left.carousel-control, .right.carousel-control {
+	margin-top: 0px;
+}
+
+.containerPicture h1 {
+	font-size: 28px;
+}
+
+.banner-promo .carousel-caption {
+	bottom: 0px;
+}
+
+.promotional_area {
+	margin-top: 10px;
+}
+
+#carousel-banner {
+	
+}
+
+#internalBookingFormContainer {
+	border: 1px solid #d7d7d7;
+}
+
+.welcome p {
+	text-align: center;
+	padding: 10px  0;
+}
+
+.top-bar {
+	width: 100%;
+}
+
+.guest_login, .info {
+	width: 50%;
+	text-align: center;
+}
+
+.sitemap {
+	display: none;
+}
+
+.top-bar {
+	margin-right: 0px !important;
+}
+
+.top-bar {
+	position: relative;
+	top: 0;
+	box-shadow: 20px 1px 6px rgba(0,0,0,.4);
+	z-index: 60;
+}
+
+.logo_brand {
+	top: 0;
+}
+
+div.fresh_desk {
+	margin-bottom: 0px;
+}
+
+.page_title {
+	display: none;
+}
+
+.noCarousel .page_title {
+	display: block;
+}
+
+.bubble {
+	top: -210px;
+	right: 25px;
+}
+
+.fresh_desk {
+	margin-top: 0px;
+}
+
+#carousel-banner .carousel_icon {
+	font-size: 34px;
+	padding-top: 60px;
+}
+
+.RoomPage #header_section {
+	top: 200px;
+}
+
+#carousel3 {
+	padding-bottom: 20px;
+}
+
+#carousel3 .flex-direction-nav .flex-next {
+	margin-right: 18px;
+}
+
+#carousel3 .flex-direction-nav .flex-prev {
+	margin-left: 18px;
+}
+
+#carousel3 {
+	
+}
+
+#holder-init {
+	padding: 10px 0;
+}
+
+div.details {
+	position: relative;
+	margin-top: 20px;
+}
+
+.internalItemTitle {
+	padding-top: 15px;
+}
+
+.map_location {
+	padding: 0;
+}
+
+.description {
+	height: 100%;
+	margin-bottom: 20px;
+}
+
+.pagetitle_container {
+	display: none;
+}
+
+.noCarousel .main-content {
+	margin-top: 30px;
+}
+
+
+
+
+#carousel3.flexslider {
+	width: 100%;
+}
+
+
+#top-nav-smaller-toggle .buttonContainer{
+margin-top:10px;
+position:absolute:
+right:-30px;
+z-index:9999;}
+
+.logo img {
+	padding-left: 0px;}
+
+.brand {
+	padding-left: 8px; }
+
+
+#myCarousel .carousel-inner .item .slideItem {
+	height: 500px;}
+
+.Homepage #myCarousel .carousel-inner .item .slideItem {
+height: 500px;}
+
+#header_section{
+bottom:20px;}
+
+#internalBookingFormContainer .fieldElina.bookCheckInElina input, #internalBookingFormContainer .fieldElina.bookCheckOutElina input {
+	font-size: 13px;}
+	
+.fieldElina.bookPeopleElina select#guests {
+font-size: 13px!important;
+	height:30px;
+}
+
+		
+.intContainer h1 {		
+  font-size:32px;}
+	
+.newsletter_signup a h1 {
+font-size: 28px;}
+		
+.newsletter_signup p{
+	clear:both;}
+
+body.internalPages .left.carousel-control, body.internalPages .right.carousel-control {
+ margin-top: 0px; 
+top: 20%;
+	
+}
+
+
+.internalItemLink.Romantic:after{
+margin-left:0;}
+
+.grid-section h1:before, .grid-section h1:after, h3.sub_headline:after, h3.sub_headline:before{
+content:none;}
+			
+			.internalItemLink {
+	color: #3d2e34;
+font-size:24px;}
+
+.span2.omega {
+		width: 30%!important;}
+					
+}
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */

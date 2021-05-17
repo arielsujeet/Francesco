@@ -1,0 +1,36 @@
+#wrapper { width:960px; margin:0 auto; position:relative; overflow:hidden;}
+
+#header { background:url(../img/header.png) repeat-y; width:100%; height:50px; margin:0 0 40px; -moz-border-radius:0 0 7px 7px; -webkit-border-radius:0 0 7px 7px; border-radius:0 0 7px 7px;}
+
+#sidebar { /*float:left;*/ display:inline; /*width:210px;*/ overflow:hidden; position:relative; margin:0 0 40px;}
+#sidebar table.smallform th { padding:3px; width:auto;}
+#sidebar .btn { float:right; display:inline;}
+
+#login .heading h2, #booking .heading h2 { margin:0 5px 5px; /*padding:3px;*/}
+#login th, #booking label { color:#8D7D84;}
+
+#login .heading { /*background: none repeat scroll 0 0 #6B535D;*/
+    position: relative;}
+#login .block01 { /*background:#d1d1d1;*/  -moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px;}
+#login .logout { position:absolute; right:5px; top:0; font-size:10px; font-weight:bold; top: -15px;}
+#login a { color:#8D7D84; text-decoration:none;}
+#login a:hover { text-decoration:underline;}
+
+#booking .heading  { /*background:#d1d1d1;*/ -moz-border-radius: 3px; -webkit-border-radius: 3Px; border-radius: 3px;}
+#booking .block01 { /*background:#d1d1d1;*/ margin:0 0 20px; -moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px;}
+#booking .text { display:none;}
+#booking .ico { padding:0 0 0 2px; margin-top: -2px;}
+
+#content { margin-left: 16px; margin-top: 305px; width: 740px;}
+
+#footer { /*background:url(../img/header.png) repeat-y;*/ clear:both; width:100%; height:50px; margin:40px 0; -moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px;}
+#ctl00_ctl00_pnlLoggedIn, #ctl00_ctl01_pnlLoggedIn, #ctl00_ctl00_pnlLoggedIn, #ctl00_ctl00_ctl00_pnlLoggedIn {	background: #544048;
+}
+
+span#ctl00_ctl02_ctl00_villaCalendar_calProperty {margin-left:-2px;}
+
+#ctl00_ctl02_ctl00_villaCalendar_calProperty { width:auto !important;}
+
+SELECT#ctl00_ctl02_ctl00_ddlOwnerProperty {WIDTH:152PX !IMPORTANT;}
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */

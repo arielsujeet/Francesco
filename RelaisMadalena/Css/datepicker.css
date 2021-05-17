@@ -1,0 +1,59 @@
+/* jCalendar */
+
+TABLE.jCalendar { margin: 0; width: 100%; }
+TABLE.jCalendar TH { /*background: #acacac;*/ color: #343434; padding: 5px 6px; text-align: center; /*border: 1px solid #fff;*/ font-size: 10px; font-weight: bold; }
+TABLE.jCalendar TD {  padding: 5px 3px;
+    text-align: right; border: 1px solid #fff; font-size: 12px; 
+ background: url("ui-bg_glass_100_f6f6f6_1x400.png") repeat-x scroll 50% 50% #F6F6F6;
+    border: 1px solid #CCCCCC;
+    color: #1c94c4;
+    font-weight: bold;
+    outline: medium none;}
+TABLE.jCalendar TD.other-month { color: #F6F6F6; border: 0; }
+TABLE.jCalendar TD.weekend { /*background: #f7eaea;*/ }
+TABLE.jCalendar TD.today { background: #f8ff13; color: #777; }
+TABLE.jCalendar TD.selected { background: #513e46; color: #fffeff; }
+TABLE.jCalendar TD.selected:hover { background: #c197a7; color: #363636; }
+TABLE.jCalendar TD.dp-hover { background: #fff0a5; color: #363636; }
+TABLE.jCalendar TD.disabled { 
+background: f2f2f2;
+    border: 1px solid #e2e2e2;
+    color: rgba(28,148,196,0.37);;
+    font-weight: bold;
+    outline: medium none;}
+
+DIV#dp-popup { position: absolute; z-index: 9999; text-align: left; 
+background: url(ui-bg_highlight-soft_100_eeeeee_1x100.png) repeat-x scroll 50% top #EEEEEE;
+    border: 1px solid #DDDDDD;
+    color: #333333; -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+  -webkit-box-shadow: 0px 2px 8px 0px #000000;
+-moz-box-shadow: 0px 2px 8px 0px #000000;
+box-shadow: 0px 2px 8px 0px #000000;
+font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1.1em; }
+DIV.dp-popup { position: relative; background: #fff; font-size: 10px; padding: 1px; border: 1px solid #96917f; width: 190px; line-height: 14px; }
+DIV.dp-popup H2 { padding: 4px; margin: 0; text-align: center;
+background: #f6ae37 url(ui-bg_gloss-wave_35_f6a828_500x100.png) repeat-x scroll 50% 50%;
+    color: #FFFFFF;
+	-moz-border-radius: 3px 3px 3px 3px;
+	font-style: normal;
+	font-size: 13px;
+	font-weight: bold;
+}
+DIV.dp-popup A { color: #000; padding: 3px 2px 0 2px; }
+DIV.dp-popup A:hover { text-decoration: none; }
+DIV.dp-popup DIV.dp-nav-prev { float: left; padding: 3px 0 0 3px; line-height: 13px; }
+DIV.dp-popup DIV.dp-nav-prev A { float: left; cursor: pointer; /*background: #004687;*/ margin: 0 2px 0 0; padding: 2px 1px; color: #fff; text-align: center; width: 15px; font-weight: bold; }
+DIV.dp-popup DIV.dp-nav-prev A:hover { /*background: #000;*/ }
+DIV.dp-popup DIV.dp-nav-prev A.disabled { cursor: default; }
+DIV.dp-popup DIV.dp-nav-next { float: right; padding: 3px 3px 0 0; line-height: 13px; }
+DIV.dp-popup DIV.dp-nav-next A { float: left; cursor: pointer; /*background: #004687;*/ margin: 0 0 0 2px; padding: 2px 1px; color: #fff; text-align: center; width: 15px; font-weight: bold; }
+DIV.dp-popup DIV.dp-nav-next A:hover { /*background: #000;*/ }
+DIV.dp-popup DIV.dp-nav-next A.disabled { cursor: default; }
+DIV.dp-popup A.disabled { cursor: default; color: #aaa; }
+DIV.dp-popup TD { cursor: pointer; }
+DIV.dp-popup TD.disabled { cursor: default; }
+
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
