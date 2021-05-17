@@ -1,0 +1,70 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+<div id="availableCalendar" class="popupElina" data-suggestions="true" data-id="1" data-area="@Umbraco.Field("propertyArea", altText: "1")" data-type="@Umbraco.Field("propertyType", altText: "1")" data-category-id="0" data-owner="">
+			<div class="dates">
+				<h2>Your Choice</h2>
+				<p>From the afternoon of<span id="selectedStartDate"></span></p>
+				<p>To the morning of<span id="selectedEndDate"></span></p>
+				<p class="warning"></p>
+				<p class="infoSplit"></p>
+				<div id="requestInfo" style="">
+					<p>Price <span id="calculatedPrice"></span> <span class="fees">(Additional<span id="intFees"></span> fees applies)</span>
+					</p>
+					<div class="row">
+						<p>
+							<select class="peopleNumberPopup" name="people">
+				<option value="1">
+					1 Guest
+				</option>
+				<option>
+					2 Guests
+				</option>
+				<option value="3">
+					3 Guests
+				</option>
+				<option value="4">
+					4 Guests
+				</option>
+				<option value="5">
+					5 Guests
+				</option>
+				<option value="6">
+					6 Guests
+				</option>
+				<option value="7">
+					7 Guests
+				</option>
+				<option value="8">
+					8 Guests
+				</option>
+				<option value="9">
+					9 Guests
+				</option>
+				<option value="10">
+					10 Guests
+				</option>						
+							</select>
+						</p>
+					</div>
+					<div class="row">
+						<a id="discountTriggerPBEpopup" style="cursor: pointer;">Do you have a promo code?</a>
+						<div id="discountOpenerPBEpopup" style="display: none;">
+							<input id="PromoCodePopup" name="PromoCode" class="validate inputFields" placeholder="Insert your code here" type="text" value="">
+						</div>
+					</div>
+				</div>
+				<div class="singlePanel">
+					<a class="btn btn-primary">Book</a><a class="calendar-cancel">Cancel</a>
+				</div>
+				<div class="calendarLoadingContainer calendarLoadingSearchStarted row" style="display: none;">
+					<div class="calendarLoading">Calendar is loading, please wait...</div>
+				</div>
+				<div class="splitPanel" style="display: none">
+					<a class="btn btn-primary">I don't mind changing accommodation during my stay</a>
+					<a class="btn-search btn-primary">Search for availability - I do not want to have to change rooms</a>
+					<a class="btn-feedback btn-primary">I am not sure what to choose - please contact me to help make the booking</a>
+					<a class="calendar-cancel">Cancel</a>
+				</div>
+			</div>
+		</div>	
+	

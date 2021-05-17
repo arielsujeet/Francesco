@@ -1,0 +1,32 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+
+@if (CurrentPage.HasValue("galleryPictures"))
+{
+var imagesListGal = Model.Content.GetPropertyValue<string>("galleryPictures").Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse);
+var imagesCollectionGal = Umbraco.TypedMedia(imagesListGal).Where(x => x != null);
+
+<div class="container">
+    <div class="row">
+        <div id="galleryContainer" class="handwritten">
+            @foreach (var imageItem in imagesCollectionGal)
+            {
+				
+					var imageNode = Umbraco.Media(@imageItem.Id);
+
+            <div class="col-xs-6 col-md-3 col-sm-6">
+                <a href="@imageItem.Url" class="box" data-caption="@imageNode.pictureDescription" rel="gallery_group">
+                    <li style="background-image:url('/imageGen.ashx?image=@imageItem.Url&amp;width=400&format=jpg&compression=90');">
+                    </li>
+                </a>
+
+					@Html.Raw(imageNode.pictureDescription)
+
+				
+            </div>
+            }
+
+        </div>
+    </div>
+</div>
+}

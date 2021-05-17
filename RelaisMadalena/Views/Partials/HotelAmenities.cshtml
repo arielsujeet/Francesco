@@ -1,0 +1,92 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using Umbraco.Web
+@{var home = Model;}
+<div id="hotelAmenities">
+    <div class="container">
+
+        @if (home.HasValue("HotelType"))
+        {
+
+            //string[] ids = home.Value<string>("HotelType").Split(',');
+
+            var hotelTypes = Model.Value<IEnumerable<IPublishedContent>>("hotelType");
+
+<div class="hotelType centerDiv">
+    <ul class="amenitiesGeneralList">
+        @foreach (var hotelType in hotelTypes)
+        {
+            var node = Umbraco.Content(hotelType.Id);
+
+<li class="col-md-6 item">
+    @if (node.HasValue("hotelLink"))
+    {
+        var nodeItem = Umbraco.Content(node.Value("hotelLink"));
+
+
+
+    <div class="hotelItem">
+
+        @if (node.HasValue("logoImage"))
+        {
+            var nodeImg = node.Value<IPublishedContent>("logoImage");
+
+
+    <div class="logoImage">
+        <img src="/imageGen.ashx?image=@(nodeImg?.Url())&amp;width=240&format=png&compression=80" alt="@(nodeImg?.Name)">
+    </div> }
+else
+{
+
+    if (node.HasValue("logoText"))
+    {
+    <div class="logoImage">
+        <h2>@node.Value("logoText")</h2>
+    </div>}
+}
+
+
+        @if (node.Id != 0 && node.HasValue("thumbnailPicture"))
+        {
+            var thumbnailPictures = Model.Value<IEnumerable<IPublishedContent>>("thumbnailPicture");
+           
+
+            var nodeImgId = node.Value<IPublishedContent>("thumbnailPicture");
+            var nodeImg = Umbraco.Media(nodeImgId);
+            var hasGallery = node.Value("Gallery") != null ? "hasGallery" : null;
+
+    <div class="propertyGallery">
+        <div class="list_item property @hasGallery" data-gallery-id="@node.Id" style="background-image:url('/imageGen.ashx?image=@(nodeImgId?.Url())&amp;width=440&format=jpg&compression=80');height:340px;width:100%;background-size:cover;background-repeat:no-repeat;z-index:0;">
+            <div class="gallery-cont"></div>
+        </div>
+    </div>}
+
+        <div class="hoteldescriptionType">
+            <h3>@home.Value("featuresTitle")</h3>
+            <p>@node.Value("shortPageDescription")</p>
+
+            <a href="@node.Value("hotelLink")" class="@node.Name MySite">
+                <span class="finalLink test">@node.Value("buttonText") @*@Umbraco.Field("#Book now")*@</span>
+            </a>
+
+        </div>
+    </div>}
+</li>                }
+
+    </ul>
+</div>}
+    </div>
+</div>
+
+<script>
+    $(".MySite").click(function (e) {
+        debugger;
+        e.preventDefault();
+        var SelectedClass = this.className;
+        if (SelectedClass == "Relais Maddalena Classic MySite") {
+            window.location.href = "https://reservations.verticalbooking.com/reservations/index.html?lingua_int=eng&id_stile=13871&id_albergo=18233&dc=6027";
+        }
+        if (SelectedClass == "Relais Maddalena Deluxe MySite") {
+            window.location.href = "https://reservations.verticalbooking.com/reservations/index.html?lingua_int=eng&id_stile=13871&id_albergo=18233&dc=6027";
+        }
+    });
+</script>

@@ -1,0 +1,32 @@
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+	@{
+		
+
+<ul class="filters filterExc">
+  @try
+      {
+        var baseNode = CurrentPage.AncestorOrSelf();
+ 	  	var propAlias = Parameter.DataAlias;
+ 	  	var prefix = Parameter.DataPrefix;  
+	    var myStringValue = Convert.ToInt32(propAlias); 
+        XPathNodeIterator iterator = umbraco.library.GetPreValues(myStringValue);
+        iterator.MoveNext(); //move to first
+        XPathNodeIterator preValues = iterator.Current.SelectChildren("preValue", "");
+        @*@preValues.Count*@
+            while (preValues.MoveNext())
+            {
+                string preValue = preValues.Current.Value;
+                <li>
+					<input type="checkbox" id="@Html.Raw(prefix + preValue)" value="@Html.Raw(prefix + preValue)" class="dynamicFilterInput" />
+					<label for="@Html.Raw(prefix + preValue)">@preValue</label>
+					<span class="@Html.Raw("spanClass"+prefix +preValue)">0</span>
+					</li>
+            }
+        }
+        catch (Exception e)
+        {
+          @e.ToString()   
+        }
+</ul>
+}

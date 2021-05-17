@@ -1,0 +1,81 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@{    
+	var selection= CurrentPage.RoomPage.Where("Visible");
+}
+<div class="container">
+@if(selection.Any()){
+
+
+	<div id="holder-init" class="filterThis showThis">
+		@foreach (var node in selection)
+		{ 
+			if (node.Id != 0  && node.HasValue("thumbnailPicture"))
+			{				
+				var nodeImgId = @node.thumbnailPicture;
+				var nodeImg = Umbraco.Media(@nodeImgId);
+<div class="row">
+				<li class="list_entry itemBlock col-md-8 @{
+					
+	if (node.HasValue("typeOfRoom"))
+	{	
+		{
+			
+			@Html.Raw(node.typeOfRoom);
+			
+		}
+		
+		if(node.HasValue("categoryRoom")){
+		
+			
+			@Html.Raw(node.categoryRoom);
+	
+		}
+	}
+}"
+
+>         <div class="row">
+				<div  class="col-md-5 ">
+		<a href="@node.Url">
+				<span class="list_img" style="background-image:url('/imageGen.ashx?image=@nodeImg.Url&amp;width=500&format=jpg&compression=90');"><span>
+				
+			</a>
+</div>
+					
+		<div class="description col-md-7" >
+			<div class="internalItemTitle">
+			@if(@node.HasValue("altTitleThumb")){
+				@node.altTitleThumb
+				}else{
+				
+				@node.pageTitle
+						}
+			 @if (node.withView == true){
+			   <a class="bubble" href="@node.Url">with<br/>view</a>
+	    }
+			</div>
+				
+		<div class="description_text">		
+			
+			@if(@node.HasValue("roomDescription")){
+			<p>@Umbraco.Truncate(@node.roomDescription, 220)</p>
+	}
+			</div>
+	       
+	
+	<div class="details">
+			<a href="@node.Url" class="details-btn">See Details</a>
+		</div>
+		</div>
+				
+			</div>	
+			</li>
+</div>	
+	}
+}
+
+
+</div>
+}
+
+</div>

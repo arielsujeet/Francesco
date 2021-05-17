@@ -1,0 +1,126 @@
+﻿
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+<div class="col-xs-12 col-sm-12 col-md-4">
+    <h2>Events</h2>
+
+    <div class="events">
+        <h3><span class="fa-stack">
+            <i class=" fa fa-angle-right fa-stack-1x white-force"></i>
+            <i class="fa fa-circle fa-stack-2x "></i>
+            </span>@Umbraco.Field("#Don't Miss Out")</h3>
+        @Umbraco.Field("events", recursive: true)
+    </div>
+</div>	
+	
+				
+<div class="col-xs-12 col-sm-12 col-md-4">
+    <h2>@Umbraco.Field("middleBoxTitle", recursive: true) @*@Umbraco.Field("#Social Links")*@ </h2>
+    <div class="social_links">
+        @*<h3>@Umbraco.Field("middleBoxTitle")</h3>*@
+
+        <div class="media">
+            @*<div class="facebook">
+				<a href="@Umbraco.Field("facebookUrl", recursive: true)" target="_blank"><span class="fa-stack">
+                <i class=" fa fa-facebook fa-stack-1x white-force"></i>
+                <i class="fa fa-circle fa-stack-2x "></i>
+
+                </span>Facebook</a>
+				<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Frelaismaddalena&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
+            </div>
+
+            <div class="twitter">
+			
+					<a href="@Umbraco.Field("twitterUrl", recursive: true)" target="_blank"><span class="fa-stack">
+                <i class=" fa fa-twitter fa-stack-1x white-force"></i>
+                <i class="fa fa-circle fa-stack-2x "></i>
+
+                </span>Twitter</a>
+					<div>
+					<a href="https://twitter.com/RelaisMaddalena" class="twitter-follow-button" data-show-count="false">Follow@RelaisMaddalena</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+					<a class="twitter-share-button" href="https://twitter.com/share"> Tweet</a>
+                <script>
+window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+</script>
+					</div>
+					
+				<div class="linkedin">
+					<a href="http://it.linkedin.com/in/relaismaddalena" target="_blank"><span class="fa-stack">
+                <i class=" fa fa-linkedin fa-stack-1x white-force"></i>
+                <i class="fa fa-circle fa-stack-2x "></i>
+
+                </span>LinkedIn</a>
+					<div>
+					<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+<script type="IN/FollowCompany" data-id="3058735" data-counter="right"></script>
+					<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+                    <script type="IN/Share" data-url="www.relaismaddalena.com" data-counter="right"></script>
+					</div>
+				</div>
+					
+				<div class="googleplus">
+					<a href="https://plus.google.com/u/0/+RelaisMaddalenaRoma/posts" target="_blank"><span class="fa-stack">
+                <i class=" fa fa-google fa-stack-1x white-force"></i>
+                <i class="fa fa-circle fa-stack-2x "></i>
+
+                </span>Google +</a>
+					<div>
+<script src="https://apis.google.com/js/platform.js" async defer>
+  {lang: 'en-GB'}
+</script>
+
+<div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://www.relaismaddalena.com"></div>
+					</div>
+				</div>*@
+	    				       
+
+	
+			   @*<div class="Guest Book">
+			    <a href="http://www.relaismaddalena.com/guest-book/" target="_blank"><span class="fa-stack">
+                <i class="fa fa-angle-right fa-stack-1x white-force"></i>
+                <i class="fa fa-circle fa-stack-2x "></i>
+                </span>Guest Book</a>
+		          </div>*@
+					</div>						
+        <div class="reviewsList">
+			  
+            @{
+			string startNodeReviewId = Umbraco.GetDictionaryValue("ReviewNode");
+            var startNodeReview = Umbraco.Content(@startNodeReviewId);
+            }
+
+            @if(startNodeReview.Children.Where("Visible").Any())
+            {
+            <ul class="reviewsList">
+                @foreach (var review in startNodeReview.Children.Where("Visible").RandomOrder().Take(1))
+                { 			 
+                if(!review.removeFromRandomList){
+                <li>
+					<div class="Prefooter_review">
+                    <p class="review_text">@review.commentReview</p>
+                    <h3 class="reviewName"><span>@review.Name</span></h3>
+                    <h3 class="reviewCountry"><span>@review.countryReview</span></h3>
+					</div>
+                   </li>		
+                   }
+                    }
+            </ul>
+            }    
+
+
+            <a data-toggle="tooltip" data-placement="right" href="@Umbraco.Content(@startNodeReviewId).Url">@Umbraco.GetDictionaryValue("Write a Review or read more")</a>
+        </div>
+
+    </div>
+</div>		
+				
+<div class="col-xs-12 col-sm-12 col-md-4">
+    <h2>@Umbraco.Field("#Hotel Services")</h2>
+
+    <div class="card_payments">
+        @Umbraco.Field("cardPayment", recursive: true)
+
+    </div>
+</div>		
+		

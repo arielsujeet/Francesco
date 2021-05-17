@@ -1,0 +1,70 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@*<div class="row" id="checkAvailabilityBox">
+			<div class="col-md-6">
+				<div class="calendarPlaceholder availCalendarElina">
+					<div class="calendarLoadingContainer row" style="display: none;">
+						<div class="calendarLoading">Calendar is loading, please wait...</div>
+					</div>
+				</div>
+				<div class="promoRow"></div>	
+			</div>
+			<div class="bottomLine col-md-6 availability-box-container-section" style="">
+				<div class="numberOfGuests-box">
+					<label for="peopleNumberPopup">Number of Guests:</label>
+				<select id="peopleNumberPopup" name="people">
+					@{
+						foreach(var guestNode in CurrentPage.maxGuests.Split(',')){
+							var guestNo = Umbraco.Content(guestNode);
+							var guestName = Umbraco.Content(guestNode).Parent();
+							<option value="@guestNo.Name" @if(guestNo.Name == "2"){@Html.Raw("selected='selected'")}>
+								@guestNo.Name @if(guestNo.Name == "1"){@guestName.singular}else{@guestName.plural}
+							</option>						
+						}
+					}	
+				</select>
+					<span id="peopleNumberPopup-selection"></span>
+				</div>
+				<div id="loadingPanel" style="display:none;"><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+<span class="sr-only">Loading...</span></div>
+				<div id="check-here" class="hidden-sm">
+					<p class="arrow-button">
+						<i class="fa fa-arrow-left anim-arrow-left" aria-hidden="true"></i> Click on the calendar to check for prices and availability @if(CurrentPage.HasValue("daysRestriction")){<br/><span class="restriction">@CurrentPage.daysRestriction</span>}</p>
+							<p><input id="elina-promocode" type="text" name="promoCode" placeholder="Promo Code" style="margin: 5px 15px;" /></p>
+					<div class="legend hidden-sm">
+					<div class="row">
+						<span class="calendar-available td"></span>Available day
+					</div>
+					<div class="row">
+						<span class="calendar-unavailable td"></span>Not available
+					</div>
+					<div class="row">
+						<span class="calendar-selection-middle td"></span>Your selection
+					</div>
+				</div>	
+				</div>
+				<div id="elina-suggestions" style="display:none;">
+					<p>Choose dates on the calendar or select one of the suggested stays below.</p>
+					<ul id="elina-dates-container"
+                    data-guestpromo1="@CurrentPage.guest1"
+                    data-guestpromo2="@CurrentPage.guest2"
+                    data-guestpromo3="@CurrentPage.guest3"
+                    data-guestpromo4="@CurrentPage.guest4"
+                    data-guestpromo5="@CurrentPage.guest5"
+                    data-guestpromo6="@CurrentPage.guest6"
+                    data-guestpromo7="@CurrentPage.guest7"                    
+                    data-guestpromo8="@CurrentPage.guest8"                    
+                    data-guestpromo9="@CurrentPage.guest9"                    
+                    data-guestpromo10="@CurrentPage.guest10">
+						<li class="date-placeholder">Suggested dates</li>
+						<li class="col-md-6 date-sug" data-addday="3" style="display:none;"></li>
+						<li class="col-md-6 date-sug" data-addday="4" style="display:none;"></li>
+						<li class="col-md-6 date-sug" data-addday="7" style="display:none;"></li>
+					</ul>
+					<button id="elina-submit-custom" class="btn btn-primary" style="display:none;">Book now</button>
+					<div class="row">
+						<button id="elina-cleardates" class="btn btn-secondary" style="display:none;"><i class="fa fa-times" aria-hidden="true"></i>
+ Clear and start again</button>
+					</div>
+				</div>
+			</div>
+		</div>*@

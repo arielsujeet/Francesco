@@ -1,0 +1,68 @@
+﻿
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+ @if (CurrentPage.HasValue("carouselImages"))
+{
+    var imagesList = Model.Content.GetPropertyValue<string>("carouselImages").Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse);
+    var imagesCollection = Umbraco.TypedMedia(imagesList).Where(x => x != null);
+ 
+    
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+				@{
+					
+		for (int i = 0; i < imagesCollection.Count<IPublishedContent>(); i++)
+        { 
+        string indicatoractive = "";
+        if (i == 0)
+        {
+        indicatoractive = "active";
+        }
+        <li data-target="#myCarousel" data-slide-to="0" class='@indicatoractive'></li>
+        }
+	    }
+				
+    </ol>
+    @{
+		
+	int countItemsInList = Umbraco.TypedMedia(imagesList).Where(x => x != null).Count()-1;	
+    int count = 0;
+    string activeclass = "";
+	 @Html.Raw("<div class='carousel-inner'>")
+    foreach (var imageItem in imagesCollection)
+    {
+        if (count == 0)
+        {
+        activeclass = "item active";
+        count++;
+        }
+        else
+        {
+        activeclass = "item";
+        }
+	
+        <div class='@activeclass'>
+			@if(Request["mobile"] == "1" ){	
+					<div class="slideItem" style="background-image:url('/imageGen.ashx?image=@imageItem.Url&amp;width=400&format=jpg&compression=80')"><img src="/imageGen.ashx?image=@imageItem.Url&amp;width=400&format=jpg&compression=80" style="height:0; width:0;" /></div>			
+			
+			}else{
+					<div class="slideItem" style="background-image:url('/imageGen.ashx?image=@imageItem.Url&amp;width=1700&format=jpg&compression=80')"><img src="/imageGen.ashx?image=@imageItem.Url&amp;width=400&format=jpg&compression=80" style="height:0; width:0;" /></div>
+			}
+			
+
+			<div class="dark_gradient"></div>
+        </div>
+    }
+	
+   	 @Html.Raw("</div>")
+		 
+		 if (countItemsInList != 0){
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+   	 <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		 
+		 }
+
+		
+		 }
+	</div>
+		 
+}

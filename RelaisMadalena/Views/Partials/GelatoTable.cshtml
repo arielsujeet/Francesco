@@ -1,0 +1,96 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@*
+	
+		@if(CurrentPage.HasValue("rowTable")){	
+				var count = 0;
+		
+		<div id="aptDetails" class="table-layout" >
+		@foreach (var row in CurrentPage.rowTable){
+        count++;
+<div class="col-md-4" >
+		<div class="rowType">
+
+<div class="rowName"><h2>@Html.Raw(row.rowName)</h2></div>
+<p class="rowDescription">@Html.Raw(row.rowDescription)</p>	
+				
+@if (row.mediaSlider != "") {
+
+	<div  class="@Html.Raw("flexslider flexsliderVertical"+count)"  >
+	<ul class="slides">
+
+@foreach (var item in row.mediaSlider.ToString().Split(','))
+{
+IPublishedContent sliderImage = Umbraco.TypedMedia(item);
+	
+	<li class="slide" style="background-image:url('/imageGen.ashx?image=@sliderImage.Url&amp;width=330&format=png&compression=80');height:330px;width:330px;background-size:contain;background-repeat:no-repeat;">
+	</li>
+		
+		
+}
+	
+	</ul>
+		
+</div>
+}
+</div>
+				
+<p class="rowPrice"><span class="currency">@Umbraco.Field("currency")</span><span class="amount"> @Html.Raw(row.rowPrice)</span></p>	
+<p class="rowWeight">@Html.Raw(row.rowWeight)</p>		
+			</div>
+
+
+
+		}
+		
+		</div>}*@
+	
+	
+@{var home = CurrentPage;
+ var count= 0;}
+<div class="container">
+  
+@if (home.HasValue("gelatoSlider")){
+ 
+string[] ids = home.gelatoSlider.Split(',');
+<div id="aptDetails" class="table-layout">
+	
+    @foreach (string id in ids)
+     { 
+	 count++;      
+
+     var node = Umbraco.Content(id);
+	<div class="col-md-4" >
+	<div class="rowType">
+	<div class="titleDescription">
+	<div class="rowName"><h2>@node.nameRow</h2></div>
+    <p class="rowDescription">@node.descriptionRow</p>	
+	</div>
+	<div  class="@Html.Raw("flexslider flexsliderVertical"+count)"  >
+<ul class="slides">
+@foreach (var row in node.tableRow){
+             
+if (row.mediaGelato != "") {
+IPublishedContent sliderImage=Umbraco.TypedMedia(row.mediaGelato.ToString());
+	
+<li class="slide">
+	
+	<div class="slideImage" style="background-image:url('/imageGen.ashx?image=@sliderImage.Url&amp;width=330&format=png&compression=80');height:330px;width:100%;background-size:contain;background-repeat:no-repeat;position:relative;margin: 0 auto;background-position: center;">
+	</div>
+<div class="gelatoDetails" style="">
+<p class="rowPrice"><span class="currency">@Umbraco.Field("currency")</span><span class="amount"> @Html.Raw(row.priceGelato)</span></p>	
+<p class="rowWeight">@Html.Raw(row.weightGelato)</p>	
+</div>	
+	</li>
+}
+}
+</ul>
+		
+</div>
+	</div>
+	</div>
+	}
+	</div>
+}
+	 
+	</div>
+		

@@ -1,0 +1,11 @@
+﻿@using umbraco.cms.businesslogic.relation;
+@using umbraco.BusinessLogic;
+@{  var relations = Relation.GetRelations(Model.Id);
+	foreach (var relation in relations)
+	{
+    var child = relation.Child;
+	var altNode = @Library.NodeById(child.Id).Url;
+	<link rel="alternate" href="@altNode" hreflang="de-DE" />
+	}
+	
+}

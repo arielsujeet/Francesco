@@ -1,0 +1,51 @@
+
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@if (CurrentPage.HasValue("carouselImagesThumb"))
+{
+
+
+<div id="slider" class="flexslider">
+  <ul class="slides">
+	  @foreach (var image in Umbraco.Field("carouselImagesThumb").ToString().Split(',').Select(x=>Umbraco.Media(int.Parse(x)))){
+
+    <li style="background-image: url(/imageGen.ashx?image=@image.Url&amp;width=1920);" alt="@image.Name">
+		
+<img src="/imageGen.ashx?image=@image.Url&amp;width=1920" width="0" height="0" />
+	</li>
+	  }
+  </ul>
+</div>
+
+	
+    <div class="container thumb_container">
+		<div class="row">
+		<div class="col-md-8">
+        <div id="carousel3" class="flexslider"  >
+  <ul class="slides">
+	  
+	  @foreach (var image in Umbraco.Field("carouselImagesThumb").ToString().Split(',').Select(x=>Umbraco.Media(int.Parse(x)))){
+
+   <li style="background-image: url(/imageGen.ashx?image=@image.Url);" alt="@image.Name">
+		
+<img src="/imageGen.ashx?image=@image.Url" width="0" height="0" />
+	   <div class="overlay"></div>
+	</li>
+    }
+	
+		   
+
+  </ul>
+</div>
+	  
+	  </div>
+
+        <div class="col-md-4">
+            	@{ Html.RenderPartial("FreshDesk"); }
+
+      
+</div>
+	</div>
+	</div>
+	
+
+}

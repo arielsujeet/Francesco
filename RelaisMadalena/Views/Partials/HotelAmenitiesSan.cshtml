@@ -1,0 +1,76 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{var home = CurrentPage;
+ var count= 0;}
+<div id="hotelAmenities">
+<div class="container">
+  
+@if (home.HasValue("HotelType")){
+ 
+string[] ids = home.HotelType.Split(',');
+<div class="hotelType centerDiv">
+	
+             <ul class="amenitiesGeneralList">
+                @foreach (string id in ids)
+                { 
+					count++;
+                var node = Umbraco.Content(id);
+                    
+              <li class="col-md-4 item">
+	  @if (node.HasValue("hotelLink")){
+      var nodeItem = Umbraco.Content(node.hotelLink);
+			
+			
+				
+ <div class="@Html.Raw("hotelItem flavourSlider"+count)" >
+				  
+@if(node.HasValue("logoImage")){
+	var nodeImgId = @node.logoImage;
+	var nodeImg = Umbraco.Media(@nodeImgId); 
+<div class="logoImage">
+<img src="/imageGen.ashx?image=@Umbraco.Media(nodeImgId).Url&amp;width=60&format=png&compression=80" alt="@nodeImg.Name">
+</div>
+	} 
+					 
+	<div class="logoImage">
+	<h2>@node.Name</h2>
+	</div>
+		
+	 
+	
+<ul class="@Html.Raw("bxslider"+count)"> @*@node.mediaGallery*@
+@foreach (var item in node.mediaGallery.Split(','))
+{
+var sliderImage = Umbraco.Media(item);
+	
+	<li class="bxslide" style="background-image:url('/imageGen.ashx?image=@sliderImage.Url&amp;width=340&format=jpg&compression=80');height:340px;width:340px;background-size:cover;background-repeat:no-repeat;">
+		</li>
+		
+		}  </ul>
+
+
+			
+			<div class="hoteldescriptionType">
+                <h3>@home.featuresTitle</h3>
+				<p>@node.shortPageDescription</p>
+					
+	@*<a href="@node.hotelLink" class="@node.Name">			
+      <span class="finalLink">@Umbraco.Field("#Book now")</span>
+			</a>*@
+				
+				</div>
+					</div>
+					
+		}
+                </li>
+
+                }
+    
+                </ul>
+            </div>
+
+}
+</div>
+	</div>
+	
+						
+			

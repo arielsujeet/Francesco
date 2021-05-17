@@ -1,0 +1,142 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+	@using Umbraco.Web
+@using AngularGoogleMaps;
+@{
+<div id="mapAreas" style="width:100%;height:600px;"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlai8kS3I_OEo0nE5Swn10KC67UhdKwPY"></script>
+var gmapLocation = Model.Value<AngularGoogleMaps.Model>("locationCoord");		
+var gmapLatitude = 	gmapLocation.Latitude.ToString().Replace(",",".");
+var gmapLongitude = gmapLocation.Longitude.ToString().Replace(",",".");}
+
+@*@{
+	var aptList = CurrentPage.Site();
+}*@
+@{
+
+<script>
+     
+	
+var map;
+var markers_cont = [];	
+	
+function initMap() {
+	    var bounds = new google.maps.LatLngBounds();
+		var options = {
+		zoom: 12,
+   	    center: new google.maps.LatLng(@gmapLatitude, @gmapLongitude),
+		scrollwheel: false,
+		@if(Request["mobile"] == "1" ){
+			@Html.Raw("draggable: false,navigationControl: true,");
+		}
+	
+        }  
+		  
+        map = new google.maps.Map(document.getElementById('mapAreas'), options);  		  
+
+ 		var markers = [		
+			@if(Model.HasValue("locationCoord")){
+			var finalComma = ",";
+			@*if(CurrentPage.IsLast()){
+			finalComma = "";
+			}*@			
+			var mapCoord = Model.Value<string>("locationCoord").Split(',');
+			var mapLng = mapCoord[0];
+			var mapLat = mapCoord[1];
+			var aptCoords = mapLng+","+mapLat;
+			var current = 0;
+				if(Model.Id == Model.Id){
+				current = 1;
+				}
+				
+			@Html.Raw("['"+ Model.Name +"',"+ aptCoords+","+current+"]"+finalComma);
+				}
+			
+		 ];
+
+ @*var infoWindowContent = [
+			@if(CurrentPage.HasValue("locationCoord")){
+			var finalComma = ",";
+			if(CurrentPage.IsLast()){
+			finalComma = "";
+			var colmd= "col-md-6";
+			}
+			var aptDesc = CurrentPage.shortDescription.Replace("'","&rsquo;");
+			var basicwindow = "<div class=\"apt-property-cont in-map\"><div class=\"col-md-6 hidden-sm hidden-xs pic-cont\"><img src=\""+ Umbraco.Media(CurrentPage.thumbnailPicture).GetCropUrl("Gallery Thumb")+"\" alt=\""+CurrentPage.Name+"\" /></div><div class=\"col-md-6 desc-cont\"><h3>"+CurrentPage.Name+"</h3>" +
+				"<p><span class=\"strong\">From &pound; "+ CurrentPage.priceFrom+",- per night</span></p>" + 
+				"</div></div>";
+			var htmlwindow = "<div class=\"info_content\">"+ basicwindow + "</div>";				
+			@Html.Raw("['"+htmlwindow+"']"+finalComma);
+		}
+		
+	];*@
+	
+	@* Infowindow of the markers here *@
+   @*  var infoWindowContent = [
+			@foreach(var apt in aptList){
+			if(apt.HasValue("locationCoord")){
+			var finalComma = ",";
+			var colmd= "col-md-6";
+			var addcurrentclass = "";
+			var explore = "<p class=\"link btn btn-primary orangeBtn\" data-href=\""+apt.Url+"\">Explore</p></div></div>";
+			if(apt.IsLast()){
+			finalComma = "";
+			}
+			if(apt.Id == CurrentPage.Id){
+				colmd= "col-md-6";
+				explore = "";
+				addcurrentclass = "";
+			}	
+			var aptDesc = apt.shortDescriptionmap.Replace("'","&rsquo;");
+			var basicwindow = "<div style=\"width:100%;\" class=\"apt-property-cont in-map "+colmd+" \"><div class=\""+colmd+" hidden-sm hidden-xs pic-cont\"><img src=\""+ Umbraco.Media(apt.thumbnail).GetCropUrl("Gallery Thumb")+"\" alt=\""+apt.Name+"\" /></div><div class=\""+colmd+" desc-cont\"><h3>"+apt.Name+"</h3><p>"+aptDesc+"</p>"+
+				"<p><span class=\"strong\">From &euro; "+ apt.priceFrom+",- per night</span></p>"+ explore;
+			var htmlwindow = "<div class=\"info_content\">"+ basicwindow + "</div>";				
+			@Html.Raw("['"+htmlwindow+"']"+finalComma);
+		}
+	}
+		
+    ];*@
+	
+
+ // Display multiple markers on a map
+    var infoWindow = new google.maps.InfoWindow(), marker, i;
+    
+    // Loop through our array of markers & place each one on the map  
+    for( i = 0; i < markers.length; i++ ) {
+        var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+        bounds.extend(position);
+        marker = new google.maps.Marker({
+            position: position,
+            map: map,
+			animation: google.maps.Animation.DROP,
+				icon: @if(Model.ContentType.Alias == "LandingPageSan"){@Html.Raw("'/imageGen.ashx?image="+ Umbraco.Media(3647).Url() +"&width=60&format=png&compression=80'")}else{@Html.Raw("'/imageGen.ashx?image=/media/1335/pinpointrm.png&width=48&format=png&compression=80'")},	
+            title: markers[i][0],
+			current: markers[i][3],
+			zIndex : 999
+        });
+		
+        // Allow each marker to have an info window    
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+                infoWindow.setContent(infoWindowContent[i][0]);
+                infoWindow.open(map, marker);
+
+            }
+			
+        })(marker, i));
+		
+		
+		// Pushing markers to external array so we can click on them.		
+		markers_cont.push(marker);	
+			
+	    // Automatically center the map fitting all markers on the screen
+			
+			
+			
+    	}
+	  } 
+	
+	google.maps.event.addDomListener(window, "resize");
+	initMap();
+
+    </script>
+}     

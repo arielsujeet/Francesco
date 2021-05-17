@@ -1,0 +1,20 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@if (CurrentPage.HasValue("chooseReviews")){
+<div class="reviews">
+    <div class="container ">
+        <h3 class="sub_headline">@Umbraco.Field("#Reviews")</h3>
+        <ul class="reviewsList">
+            @foreach (var reviewId in Umbraco.Field("chooseReviews").ToString().Split(','))
+            {	var review = Umbraco.Content(reviewId);
+
+            <li class="col-md-4"><div class="reviewSpotlight">
+                <p>@review.commentReview</p>
+                <span class="reviewName"><h3>@review.Name</h3></span>
+                <span class="reviewCountry"><h3>@review.countryReview</h3></span>
+
+                </li>		
+                }
+        </ul>
+    </div>
+</div>
+}

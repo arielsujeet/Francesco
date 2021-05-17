@@ -1,0 +1,174 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@{ 
+var home = CurrentPage.Site();
+var linkMain = Umbraco.GetDictionaryValue("LinkToRelated");
+
+}
+
+
+@if(CurrentPage.HasValue("linkBoxesInternal")){
+string[] ids = CurrentPage.linkBoxesInternal.Split(',');
+
+<div class="homeFeaturedDisplay">
+    <div class="container">
+        <div class="relatedContainer row">
+            <div class="internalContainer">
+
+
+                @* Don't edit above this point *@
+                @if(CurrentPage.HasValue("addPromotionalCarousel") && CurrentPage.addPromotionalCarousel == true){
+
+
+
+                string[] imgIds = home.bannerImages.Split(',');
+
+                <div class="col-md-8">	
+                    <div id="carousel-banner" class="carousel slide" data-ride="carousel" data-interval="@Html.Raw(@CurrentPage.Site().carouselSpeed+"000")">
+
+                        <ol class="carousel-indicators">
+                            @{
+
+                            for (int i = 0; i < imgIds.Count(); i++)
+                                                               {
+                                                               string indicatoractive = "";
+                                                               if (i == 0)
+                                                               {
+                                                               indicatoractive = "active";
+                                                               }
+                                                               <li data-target="#carousel-banner" data-slide-to="0" class='@indicatoractive'></li>
+                        }
+                        }
+
+                        </ol>
+
+                    <div class="carousel-inner">
+
+                        @{int count = 0;
+                        string activeclass = "";
+
+                        foreach (string imgId in imgIds){
+
+                        @*	<div>@imgId of @imgIds.Count()</div> *@
+
+                        if (count == 0)
+                        {
+                        activeclass = "item active";
+                        count++;
+                        }
+                        else
+                        {
+                        activeclass = "item";
+                        }
+
+                        var imageNode = Umbraco.Media(imgId);
+
+                        <div class='@activeclass'>	
+                            @if(imageNode.HasValue("pictureLink")){												
+                            @Html.Raw("<a href='"+@Umbraco.Content(imageNode.pictureLink).Url+"'>")
+
+                            }else{
+                            @Html.Raw("<div>")
+                            }
+
+
+                            <div class="slideItem" style="background-image:url('/imageGen.ashx?image=@imageNode.Url&amp;width=750&format=jpg&compression=90')">
+
+                                <div class="intContainer">
+                                    <span>@Html.Raw(imageNode.pictureDescription)</span>
+                                </div>
+
+
+                                <div class="gradient"></div>
+                            </div>
+                            @if(imageNode.HasValue("pictureLink")){												
+                            @Html.Raw("</a>")
+
+                            }else{
+                            @Html.Raw("</div>")
+                            }
+
+                        </div>	
+                        }
+                        }
+                    </div>
+
+                    <a class="left carousel-control" href="#carousel-banner" data-slide="prev"><i class="fa fa-angle-left carousel_icon"></i></a>
+                    <a class="right carousel-control" href="#carousel-banner" data-slide="next"><i class="fa fa-angle-right carousel_icon"></i></a>
+                </div>
+
+            </div>
+
+            }
+
+            @* Don't edit below this point *@
+
+            @foreach (string id in ids)
+            { 
+            var node = Umbraco.Content(id);
+            if (node.Id != 0  && node.HasValue("thumbnailPicture"))
+            {				
+            var nodeImgId = @node.thumbnailPicture;
+            var nodeImg = Umbraco.Media(@nodeImgId);
+            <div class="col-xs-12 col-sm-4 col-md-4">
+
+                <div class="itemBlock">
+                    <a href="@node.Url">
+                        <div class="internalitemBlock" style="background-image: url(/imageGen.ashx?image=@nodeImg.Url&amp;width=480&format=jpg&compression=90)">
+                            <div class="internalItemLink">
+                                @if(@node.HasValue("altTitleThumb")){
+                                @node.altTitleThumb										
+                                }else{
+                                @node.pageTitle
+                                }								
+                            </div>
+                            <div class="overlay"></div>		
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            }
+            }
+        </div>
+    </div>
+</div>
+</div>
+} else if (home.HasValue("mainBoxes")){
+string[] ids = home.mainBoxes.Split(',');
+<div class="homeFeaturedDisplay">
+    <div class="container">
+        <div class="relatedContainer row">
+            <div class="slides internalContainer">
+                @foreach (string id in ids)
+                { 
+                var node = Umbraco.Content(id);
+                if (node.Id != 0  && node.HasValue("thumbnailPicture"))
+                {				
+                var nodeImgId = @node.thumbnailPicture;
+                var nodeImg = Umbraco.Media(@nodeImgId);
+                <div class="col-xs-12 col-sm-4 col-md-4">
+
+                    <div class="itemBlock">
+                        <a href="@node.Url">
+                            <div class="internalitemBlock" style="background-image: url(/imageGen.ashx?image=@nodeImg.Url&amp;width=480&format=jpg&compression=90)">
+                                <div class="internalItemLink">
+                                    @if(@node.HasValue("altTitleThumb")){
+                                    @node.altTitleThumb										
+                                    }else{
+                                    @node.pageTitle
+                                    }								
+                                </div>
+                                <div class="overlay"></div>		
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                }
+                }
+            </div>
+        </div>
+    </div>
+</div>
+}

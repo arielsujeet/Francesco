@@ -1,0 +1,31 @@
+@inherits Umbraco.Web.Macros.PartialViewMacroPage
+
+@{
+    var startNodeIDAccommodations = 1151;
+	var startNodeIDAmenities = 1176;
+}
+
+@if (startNodeIDAccommodations != null && startNodeIDAmenities != null)
+{
+    var startNodeAccommodations = Library.NodeById(startNodeIDAccommodations);
+    var startNode = Library.NodeById(startNodeIDAmenities);
+	@Html.Raw("var amenities = [");
+    if (startNodeAccommodations.Children.Any())
+    {
+			foreach (var page in startNode.Children.Where("Visible"))
+			{ if(page.HasValue("categoryAmenity") && page.HasValue("locationAmenity") && page.IsNotLast()){
+				@Html.Raw("['"+@page.Name+"',"+@page.locationAmenity +",ico"+@page.categoryAmenity +",'<div><h1>"+ @page.Name +"</h1><p>"+ @page.descriptionAmenity +"</p></div>'],")		
+			} else if (page.HasValue("categoryAmenity") && page.HasValue("locationAmenity") && page.IsLast()){
+				@Html.Raw("['"+@page.Name+"',"+@page.locationAmenity +",ico"+@page.categoryAmenity +",'<div><h1>"+ @page.Name +"</h1><p>"+ @page.descriptionAmenity +"</p></div>']")		
+	
+			}
+           }
+		foreach (var AccPage in startNodeAccommodations.Children.Where("Visible"))
+			{ if(AccPage.HasValue("map") && AccPage.IsNotLast() && AccPage.showTheMap == true){
+				@Html.Raw(", ['"+@AccPage.Name+"',"+@AccPage.map +",icoAccomodation,'<div><h1>"+ @AccPage.Name +"</h1></div>']")		
+			}
+
+           }
+    }
+	@Html.Raw("];");
+}

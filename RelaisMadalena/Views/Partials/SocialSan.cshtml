@@ -1,0 +1,26 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+	@{
+	var home = CurrentPage.Site();
+	}
+
+@if(home.HasValue("facebookLink")){
+
+        <li>
+            <a href="@Html.Raw("https://www.facebook.com/" + home.facebookLink)" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> </a>
+        </li>
+		}
+	
+	   @if(home.HasValue("instagramLink")){
+	   <li>
+            <a href="@Html.Raw("https://www.instagram.com/"+ home.instagramLink)" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> </a>
+        </li>
+	  }
+		
+			
+		@if(home.HasValue("googleLink")){
+
+        <li>
+            <a href="@Html.Raw("https://plus.google.com/" + home.googleLink)" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i> </a>
+        </li>
+		}
+			

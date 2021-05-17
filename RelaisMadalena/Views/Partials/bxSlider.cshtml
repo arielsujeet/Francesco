@@ -1,0 +1,11 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+	
+	foreach (var item in row.mediaSlider.ToString().Split(','))
+{
+IPublishedContent sliderImage = Umbraco.TypedMedia(item);
+	
+	<div style="background-image:url('/imageGen.ashx?image=@sliderImage.Url&amp;width=320&format=jpg&compression=80');height:320px;width:100%;background-size:cover;background-repeat:no-repeat;">
+		</div>
+		
+}

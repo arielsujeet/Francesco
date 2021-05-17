@@ -1,0 +1,39 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using Umbraco.Web
+@{var home = Model;}
+
+<div id="PromoSlider">
+
+    <div class="col-md-10" style="float:none;margin:0 auto;">
+
+        <div class="row">
+            @if (home.HasValue("sliderPicker"))
+            {
+                //string[] ids = home.Value<string>("sliderPicker").Split(',');
+                var sliderPicker = Model.Value<IEnumerable<IPublishedContent>>("sliderPicker");
+
+<div id="offerSlider" class="flexslider">
+    <ul class="slides">
+        @foreach (var slide in sliderPicker)
+        {
+            var node = Umbraco.Content(slide.Id);
+<li>
+    @if (node.Id != 0 && node.HasValue("thumbnailPicture"))
+    {
+        var nodeImgId = node.Value("thumbnailPicture");
+        var nodeImg = Umbraco.Media(nodeImgId);
+<img src="@nodeImg.GetCropUrl("Slider Image")" />}
+    <div class="col-md-12 desc-slider ">
+        <div class="centerDiv">
+            <h2>@node.Name</h2>
+            <div class="promoDescription">
+                <p>@node.Value("shortPageDescription")</p>
+            </div>
+        </div>
+    </div>
+</li>}
+    </ul>
+</div>}
+        </div>
+    </div>
+</div>

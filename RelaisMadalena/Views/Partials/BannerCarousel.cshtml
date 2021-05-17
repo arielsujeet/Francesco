@@ -1,0 +1,88 @@
+﻿
+@inherits UmbracoTemplatePage
+@if (CurrentPage.HasValue("bannerImages"))
+{
+
+
+var imagesList = Model.Content.GetPropertyValue<string>("bannerImages").Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse);
+var imagesCollection = Umbraco.TypedMedia(imagesList).Where(x => x != null);	
+
+<div id="carousel-banner" class="carousel slide" data-ride="carousel" data-interval="@Html.Raw(@CurrentPage.Site().carouselSpeed+"000")">
+
+    <ol class="carousel-indicators">
+        @{
+
+        for (int i = 0; i < imagesCollection.Count<IPublishedContent>(); i++)
+        {
+        string indicatoractive = "";
+        if (i == 0)
+        {
+        indicatoractive = "active";
+        }
+        <li data-target="#carousel-banner" data-slide-to="0" class='@indicatoractive'></li>
+        }
+        }
+
+    </ol>
+    <div class="carousel-inner">
+
+        @{
+        int count = 0;
+        string activeclass = "";
+
+        foreach (var imageItem in imagesCollection)
+        {
+        if (count == 0)
+        {
+        activeclass = "item active";
+        count++;
+        }
+        else
+        {
+        activeclass = "item";
+        }
+        var imageNode = Umbraco.Media(@imageItem.Id);
+        <div class='@activeclass'>
+
+            @if(imageNode.HasValue("pictureLink")){
+
+            var picId = @imageNode.pictureLink; 
+            var mediaItemURL = Umbraco.Content(picId);
+            <a href="@mediaItemURL.Url">
+                
+                    <div class="slideItem" style="background-image:url('/imageGen.ashx?image=@imageItem.Url&amp;width=680&format=jpg&compression=90')">
+                        <div class="intContainer">
+                            <span>@Html.Raw(imageNode.pictureDescription)</span>
+                        </div>
+
+                
+
+
+
+
+                        <div class="gradient"></div>
+                </div>
+                    </a>
+                }else{
+
+                
+                    <div class="slideItem" style="background-image:url('/imageGen.ashx?image=@imageItem.Url&amp;width=680&format=jpg&compression=90')">
+                        <div class="intContainer">
+                            <span>@Html.Raw(imageNode.pictureDescription)</span>
+                        </div>
+                        
+
+
+
+
+                        <div class="gradient"></div>
+            </div>
+                    }
+                </div>
+                }
+                }
+                </div>
+            <a class="left carousel-control" href="#carousel-banner" data-slide="prev"><i class="fa fa-angle-left carousel_icon"></i></a>
+            <a class="right carousel-control" href="#carousel-banner" data-slide="next"><i class="fa fa-angle-right carousel_icon"></i></a>
+        </div>
+        }

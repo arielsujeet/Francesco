@@ -1,0 +1,36 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var homePage = CurrentPage.AncestorsOrSelf(1).First();
+    var menuItems = homePage.Children.Where("UmbracoNaviHide == false");
+}
+
+
+<!-- Nav Smaller -->
+<div id="top-nav-smaller-toggle"><div class="buttonContainer"><span class="text">Menu</span><span class="bar first"></span> <span class="bar second"></span><span class="bar third"></span></div></div>	
+	
+<div id="top-nav-smaller">	
+    <ul>
+        <li class="@(CurrentPage.Url == "/" ? "current_page_item" : null)"><a href="/">Home</a></li>
+
+        @foreach (var item in menuItems)
+        {
+              <li class="@(CurrentPage.Id == item.Id ? "current_page_item" : null)"><a href="@item.Url">@item.Name</a>
+				  
+				  
+					@if (item.DocumentTypeAlias != "PliableForm" && item.DocumentTypeAlias != "ReviewContainer" && item.Children.Where("Visible").Count() >= 1) {
+							<span class="dropDownIcon"><i class="fa fa-angle-right"></i></span>
+
+						<ul class="internalMenu">
+						@foreach (var subItem in item.Children.Where("Visible")) {
+							<li>
+								<a href="@subItem.Url">@subItem.Name</a>
+							</li>
+
+						}
+					</ul>
+				}  
+				  </li>
+        }
+    </ul>
+</div>
+<!-- /Nav Smaller -->
