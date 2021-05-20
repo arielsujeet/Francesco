@@ -1,4 +1,4 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @using ClientDependency.Core
 @using ClientDependency.Core.Mvc
 @using Umbraco.Web
@@ -234,10 +234,10 @@
         </nav>
         @if (Model.HasValue("pageHeaderLogo"))
         {
-            var nodeImgId = Model.Value<IPublishedContent>("pageHeaderLogo");
+            var nodeImg = Model.Value<IPublishedContent>("pageHeaderLogo");
             //var nodeImg = Umbraco.Media(nodeImgId);
             <div class="pageHeaderLogo">
-                <img src="/imageGen.ashx?image=@(nodeImgId?.Url())&amp;width=160&format=png&compression=90" alt="Rome Hotels Center">
+                <img src="@(@nodeImg?.Url())?width=160&format=png&compression=90" alt="Rome Hotels Center">
             </div>
         }
     </header>
@@ -248,6 +248,7 @@
                     @if (Model.HasValue("pageH1title"))
                     {
                         <span> @Model.Value("pageH1title")</span>
+                        
                     }
 
                     @if (Model.HasValue("pageSubtitle"))
@@ -268,14 +269,13 @@
         @{ Html.RenderPartial("HotelAmenities"); }
     </div>
     <div id="Promotions">
-        @*@Html.GetGridHtml(Model, "gridPromotionsLayout")
-            @Html.GetGridHtml(Model, "gridPromotionsLayout", "bootstrap2")*@
+        @Html.GetGridHtml(Model, "gridPromotionsLayout")
     </div>
 
     @if (Model.HasValue("backgroundImage"))
     {
-        var nodeImgId = Model.Value("backgroundImage");
-        var nodeImg = Umbraco.Media(nodeImgId);
+        var nodeImg = Model.Value<IPublishedContent>("backgroundImage");
+        //var nodeImg = Umbraco.Media(nodeImgId);
         <div id="Services" style="background-image:url('@nodeImg.Url()');min-height:500px;width:100%;Background-repeat:no-repeat;background-size:cover;background-position: center;">
             @*@Html.GetGridHtml(Model, "gridServicesLayout")*@
         </div>
